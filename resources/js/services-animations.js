@@ -72,7 +72,7 @@ const initServices = () => {
 
     gsap.set(label, { opacity: 0, y: 20 });
     gsap.set(words, { y: 70, opacity: 0, filter: 'blur(8px)' });
-    gsap.set(dot, { opacity: 0, scale: 0.6 });
+    if (dot) gsap.set(dot, { opacity: 0, scale: 0.6 });
     gsap.set(cards, {
         opacity: 0,
         x: compact ? 50 : 100,
@@ -110,7 +110,7 @@ const initServices = () => {
         0.12
     );
 
-    timeline.to(dot, { opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out' }, 0.5);
+    if (dot) timeline.to(dot, { opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out' }, 0.5);
 
     timeline.to(
         cards,

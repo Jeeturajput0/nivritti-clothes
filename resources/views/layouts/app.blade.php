@@ -14,8 +14,6 @@
         .js.anim-failed .reveal { opacity: 1 !important; }
         .anim-word-mask { display: inline-block; overflow: hidden; vertical-align: bottom; margin-bottom: -.12em; padding-bottom: .12em; }
         .anim-word { display: inline-block; will-change: transform, opacity, filter; }
-        .js .gallery-item { clip-path: inset(0 0 100% 0); }
-        .js .gallery-item.is-revealed { clip-path: inset(0 0 0% 0); }
         .image-zoom img { transition: transform .8s cubic-bezier(.2,.7,.2,1); }
         .image-zoom:hover img { transform: scale(1.045); }
         .catalog-card { transition: transform .35s cubic-bezier(.2,.7,.2,1); }

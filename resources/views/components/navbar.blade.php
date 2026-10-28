@@ -80,34 +80,6 @@
                     </svg>
                 </button>
 
-                {{-- Cart --}}
-                <a
-                    href="/cart"
-                    class="flex h-10 w-10 items-center justify-center rounded-full text-slate-700 transition duration-300 hover:bg-stone-900 hover:text-white"
-                    aria-label="Cart"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.8"
-                    >
-                        <path d="M6 8h12l1 12H5L6 8Z"></path>
-                        <path d="M9 8a3 3 0 0 1 6 0"></path>
-                    </svg>
-                </a>
-
-                {{-- Login --}}
-                <a
-                    href="/login"
-                    class="hidden rounded-full bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-[#102840] sm:block"
-                >
-                    Login
-                </a>
-
                 {{-- Mobile Menu Button --}}
                 <button
                     id="menu-btn"
@@ -163,7 +135,7 @@
                     href="/catalog"
                     class="rounded-2xl px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-[#102840]"
                 >
-                    Catloge
+                    Collection
                 </a>
 
                 <a
@@ -171,13 +143,6 @@
                     class="rounded-2xl px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-[#102840]"
                 >
                     Contact
-                </a>
-
-                <a
-                    href="/login"
-                    class="mt-2 rounded-2xl bg-stone-900 px-4 py-3 text-center text-sm font-medium text-white transition hover:bg-[#102840]"
-                >
-                    Login
                 </a>
             </div>
         </div>

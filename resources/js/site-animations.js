@@ -120,7 +120,7 @@ const animateValue = (timeline, numberElement, position) => {
         counter,
         {
             value: stat.value,
-            duration: 1.2,
+            duration: 0.9,
             ease: 'power2.out',
             onUpdate: () => {
                 numberElement.textContent =
@@ -305,13 +305,15 @@ const buildSection = (section) => {
     const mediaPosition = lead ? 0.15 : 0.05;
     const softPosition = mediaPosition + 0.2;
     const ctaPosition = lead ? 0.8 : 0.25;
+    const replayOnScroll = section.classList.contains('gallery-replay') || Boolean(section.querySelector('.gallery-item'));
 
     const timeline = gsap.timeline({
         defaults: { ease: 'power3.out' },
         scrollTrigger: {
             trigger: section,
             start: 'top 75%',
-            once: true,
+            once: !replayOnScroll,
+            ...(replayOnScroll ? { toggleActions: 'play reverse play reverse' } : {}),
         },
     });
 
@@ -510,16 +512,28 @@ const buildSection = (section) => {
         const position = cardPosition + index * 0.1;
 
         if (isGallery) {
+            // Alternate slide direction: even items slide LEFT ➜ RIGHT,
+            // odd items slide RIGHT ➜ LEFT.
+            const slideFromLeft = index % 2 === 0;
+
             timeline.fromTo(
                 card,
-                { clipPath: 'inset(0% 0% 100% 0%)' },
                 {
-                    clipPath: 'inset(0% 0% 0% 0%)',
+                    opacity: 0,
+                    x: slideFromLeft ? -80 : 80,
+                    scale: 0.96,
+                    filter: 'blur(7px)',
+                },
+                {
+                    opacity: 1,
+                    x: 0,
+                    scale: 1,
+                    filter: 'blur(0px)',
                     duration: 1.1,
-                    ease: 'power3.inOut',
+                    ease: 'power3.out',
+                    clearProps: 'transform,filter',
                     onComplete: () => {
                         card.classList.add('is-revealed');
-                        gsap.set(card, { clearProps: 'clipPath' });
                     },
                 },
                 position

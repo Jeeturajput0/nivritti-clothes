@@ -44,7 +44,8 @@ const initIntroAnimation = () => {
             scrollTrigger: {
                 trigger: section,
                 start: 'top 75%',
-                once: true,
+                once: false,
+                toggleActions: 'play reverse play reverse',
             },
         });
 
@@ -54,7 +55,7 @@ const initIntroAnimation = () => {
             timeline.fromTo(
                 label,
                 { opacity: 0, y: 15 },
-                { opacity: 1, y: 0, duration: 0.6 },
+                { opacity: 1, y: 0, duration: 0.28 },
                 0
             );
         }
@@ -68,14 +69,14 @@ const initIntroAnimation = () => {
                     yPercent: 0,
                     opacity: 1,
                     filter: 'blur(0px)',
-                    duration: 1,
-                    stagger: 0.06,
+                    duration: 0.48,
+                    stagger: 0.024,
                     onComplete: () => {
                         heading.classList.add('is-revealed');
                         gsap.set(words, { clearProps: 'filter' });
                     },
                 },
-                0.15
+                0.06
             );
         }
 
@@ -85,8 +86,8 @@ const initIntroAnimation = () => {
             timeline.fromTo(
                 description,
                 { opacity: 0, y: 25 },
-                { opacity: 1, y: 0, duration: 0.7 },
-                1.45
+                { opacity: 1, y: 0, duration: 0.33 },
+                0.62
             );
         }
 
@@ -96,8 +97,8 @@ const initIntroAnimation = () => {
             timeline.fromTo(
                 points,
                 { opacity: 0, x: -20 },
-                { opacity: 1, x: 0, duration: 0.55, stagger: 0.08 },
-                1.85
+                { opacity: 1, x: 0, duration: 0.32, stagger: 0.035 },
+                0.9
             );
         }
 
@@ -107,8 +108,8 @@ const initIntroAnimation = () => {
             timeline.fromTo(
                 features,
                 { opacity: 0, y: 30 },
-                { opacity: 1, y: 0, duration: 0.65, stagger: 0.12 },
-                2.25
+                { opacity: 1, y: 0, duration: 0.35, stagger: 0.05 },
+                1.08
             );
         }
 
@@ -122,11 +123,11 @@ const initIntroAnimation = () => {
                     opacity: 1,
                     y: 0,
                     scale: 1,
-                    duration: 0.7,
+                    duration: 0.32,
                     ease: 'power2.out',
                     clearProps: 'transform',
                 },
-                2.6
+                1.28
             );
         }
 
@@ -136,19 +137,26 @@ const initIntroAnimation = () => {
             timeline.fromTo(
                 contact,
                 { opacity: 0, y: 15 },
-                { opacity: 1, y: 0, duration: 0.6 },
-                2.7
+                { opacity: 1, y: 0, duration: 0.28 },
+                1.35
             );
         }
 
-        // Main image — clip-path reveal, running in parallel
+        // Main image — slides in from the right as the section enters view
         const mainImage = section.querySelector('[data-intro-image]');
         if (mainImage) {
             timeline.fromTo(
                 mainImage,
-                { clipPath: 'inset(0% 0% 100% 0%)' },
-                { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.15, ease: 'power3.inOut' },
-                0.35
+                { opacity: 0, x: 70, clipPath: 'inset(0% 100% 0% 0%)' },
+                {
+                    opacity: 1,
+                    x: 0,
+                    clipPath: 'inset(0% 0% 0% 0%)',
+                    duration: 0.7,
+                    ease: 'power3.out',
+                    clearProps: 'transform,clipPath',
+                },
+                0.2
             );
         }
 
