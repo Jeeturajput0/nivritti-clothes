@@ -27,7 +27,7 @@
                 </a>
 
                 <a
-                    href="/#about-intro"
+                    href="/about"
                     class="nav-link group relative text-sm font-medium text-slate-700 transition duration-300 hover:text-[#102840]"
                 >
                     About
@@ -159,11 +159,11 @@
             const isScrolled = window.scrollY > 40;
 
             navContainer.classList.toggle('mt-4', !isScrolled);
-            navContainer.classList.toggle('bg-white/70', !isScrolled);
+            navContainer.classList.toggle('bg-yellow/70', !isScrolled);
             navContainer.classList.toggle('shadow-black/5', !isScrolled);
 
             navContainer.classList.toggle('mt-2', isScrolled);
-            navContainer.classList.toggle('bg-white/90', isScrolled);
+            navContainer.classList.toggle('bg-yellow/90', isScrolled);
             navContainer.classList.toggle('shadow-xl', isScrolled);
         });
     }

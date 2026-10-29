@@ -3,7 +3,7 @@
 @section('content')
 
 
-<section class="overflow-hidden bg-[#edf1f7]">
+<!-- <section class="overflow-hidden bg-[#edf1f7]">
     <div class="mx-auto grid max-w-[1500px] gap-8 px-5 py-12 sm:px-6 sm:py-14 lg:min-h-[620px] lg:grid-cols-[1.08fr_.92fr] lg:items-center lg:gap-10 lg:py-20 lg:pl-[max(2.5rem,calc((100vw-1320px)/2))] lg:pr-0">
         <div class="reveal">
             <p class="inline-flex items-center gap-3 rounded-full border border-slate-300 px-4 py-2 text-xs font-medium uppercase tracking-[.16em] text-slate-800"><span class="h-2 w-2 bg-[#e8cf43]"></span> Our approach</p>
@@ -25,7 +25,7 @@
             <div class="image-zoom reveal absolute bottom-0 left-0 h-[47%] w-[43%] overflow-hidden rounded-[2.5rem] border-[10px] border-[#edf1f7] bg-slate-200"><img src="{{ asset('images/hero/hero-bg3.jpg') }}" alt="Worker carefully inspecting fabric at a textile mill" class="h-full w-full object-cover" loading="lazy"></div>
         </div>
     </div>
-</section>
+</section> -->
 <section class="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-6 md:py-16 lg:grid-cols-2 lg:items-center lg:gap-10 lg:px-8 lg:py-20">
     <div class="reveal">
         <p class="text-xs uppercase tracking-[.25em] text-[#a35d45]">Our story</p>
@@ -35,7 +35,7 @@
     </div>
     <div class="image-zoom reveal h-[440px] overflow-hidden"><img src="{{ asset('images/about/about-hero.jpg') }}" alt="Nivritti production floor with rows of sewing stations" class="h-full w-full object-cover" loading="lazy"></div>
 </section>
-<section class="bg-[#F5F7FC] px-5 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20" aria-labelledby="about-principles-title">
+<section class="bg-[#F5F7FC] px-5 py-12 sm:px-6 md:py-16 lg:px-8  border rounded-2xl lg:py-20" aria-labelledby="about-principles-title">
     <div class="mx-auto max-w-7xl">
         <div class="reveal max-w-3xl">
             <p class="text-xs uppercase tracking-[.25em] text-[#102840]">What guides our work</p>
@@ -57,17 +57,17 @@
         </div>
     </div>
 </section>
-<section class="bg-[#292722] px-5 py-12 text-white sm:px-6 lg:px-8 lg:py-20">
+<section class="bg-[#F5F7FC] px-5 py-12 text-black sm:px-6 lg:px-8 lg:py-20">
     <div class="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:px-4">
         <div class="reveal">
             <p class="text-xs uppercase tracking-[.25em] text-[#d59a7e]">Our mission</p>
             <h2 class="serif mt-4 text-4xl">Make with intention.</h2>
-            <p class="mt-5 max-w-lg text-sm leading-7 text-white/65">We make textiles that respect their material, serve their purpose and honour the knowledge of the people who create them.</p>
+            <p class="mt-5 max-w-lg text-sm leading-7 text-black/65">We make textiles that respect their material, serve their purpose and honour the knowledge of the people who create them.</p>
         </div>
         <div class="reveal border-t border-white/20 pt-8 md:border-l md:border-t-0 md:pl-10 md:pt-0">
             <p class="text-xs uppercase tracking-[.25em] text-[#d59a7e]">Our vision</p>
             <h2 class="serif mt-4 text-4xl">A more thoughtful industry.</h2>
-            <p class="mt-5 max-w-lg text-sm leading-7 text-white/65">We believe a better future for textiles is built through lasting relationships, informed choices and a commitment to keep learning.</p>
+            <p class="mt-5 max-w-lg text-sm leading-7 text-black/65">We believe a better future for textiles is built through lasting relationships, informed choices and a commitment to keep learning.</p>
         </div>
     </div>
 </section>

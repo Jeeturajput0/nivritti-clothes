@@ -547,7 +547,7 @@
                 ============================================== --}}
 
                 <div
-                    class="mt-8 grid gap-8 md:grid-cols-[.72fr_1fr] md:items-center"
+                    class="mt-8 max-w-2xl"
                 >
 
 

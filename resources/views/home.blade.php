@@ -548,7 +548,7 @@ $reviews = [
         {{-- Left content --}}
         <div class="max-w-3xl">
             <p class="text-xs uppercase tracking-[.25em] text-black">Let's begin</p>
-            <h2 class="serif mt-5 text-4xl leading-tight text-stone-900 sm:text-5xl lg:text-6xl">Let's make something meaningful.</h2>
+            <h2 class="serif mt-5 text-4xl leading-tight text-[#0b2136] sm:text-5xl lg:text-6xl">Let's make something meaningful.</h2>
             <p class="mt-6 max-w-xl text-sm leading-7 text-stone-600 lg:text-base">Have an idea, a question or a project in mind? We would love to hear what you are working on.</p>
         </div>
 
