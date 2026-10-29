@@ -10,7 +10,7 @@
 
     #trust-section {
         overflow: hidden;
-        background: #F5F7FC;
+        background: var(--color-sand);
         margin-top: 12px;
         margin-bottom: 12px;
         padding-top: 80px;
@@ -160,8 +160,8 @@
         height: 10px;
         overflow: hidden;
         border-radius: 999px;
-        background: #ffffff;
-        box-shadow: inset 0 1px 3px rgba(11, 33, 54, .08);
+        background: var(--color-ivory);
+        box-shadow: inset 0 1px 3px rgba(27, 25, 21, .08);
     }
 
     #trust-section .trust-progress-fill {
@@ -169,7 +169,7 @@
         inset: 0 auto 0 0;
         width: 0;
         border-radius: 999px;
-        background: linear-gradient(90deg, #f5df60, #e8cf43);
+        background: linear-gradient(90deg, var(--color-brass), var(--color-brass-light));
         transition: width 1.4s cubic-bezier(.16, 1, .3, 1) .25s;
     }
 
@@ -184,7 +184,7 @@
         width: 11px;
         height: 11px;
         border-radius: 999px;
-        background: #f5df60;
+        background: var(--color-brass);
         transform: translate(-50%, -50%) scale(0);
         transition: transform .45s cubic-bezier(.34, 1.56, .64, 1) 1.4s;
     }
@@ -231,8 +231,8 @@
 
     #trust-section .trust-check-item:hover .trust-check-icon {
         transform: scale(1.12) rotate(8deg);
-        background: #f5df60;
-        color: #102840;
+        background: var(--color-brass);
+        color: var(--color-ink);
     }
 
     /* -------------------------
@@ -257,11 +257,11 @@
     ------------------------- */
 
     #trust-section .trust-stat-card {
-        background: rgba(255, 255, 255, .72);
+        background: rgba(250, 247, 241, .72);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, .8);
-        box-shadow: 0 18px 40px -22px rgba(11, 33, 54, .35);
+        border: 1px solid rgba(250, 247, 241, .85);
+        box-shadow: 0 18px 40px -22px rgba(27, 25, 21, .22);
     }
 
     /* -------------------------
@@ -381,7 +381,7 @@
 
 <section
     id="trust-section"
-    class="my-3 bg-[#F5F7FC] py-20 px-5 sm:px-6 lg:px-8"
+    class="my-3 bg-sand py-20 px-5 sm:px-6 lg:px-8"
 >
 
     <div class="mx-auto max-w-7xl">
@@ -412,7 +412,7 @@
             ================================================== --}}
 
             <div
-                class="trust-anim trust-image-main relative mt-[2px] h-[380px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(11,33,54,.35)] lg:h-[460px]"
+                class="trust-anim trust-image-main relative mt-[2px] h-[380px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(27,25,21,.30)] lg:h-[460px]"
                 data-trust-main-image
             >
 
@@ -429,7 +429,7 @@
 
                     {{-- subtle overlay --}}
                     <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#102840]/10 via-transparent to-transparent"
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/10 via-transparent to-transparent"
                     ></div>
 
                 </div>
@@ -439,7 +439,7 @@
                 <div class="absolute left-8 top-8 z-10 max-w-[280px] lg:left-10 lg:top-10">
 
                     <p
-                        class="text-2xl font-semibold leading-[1.45] text-[#102840]"
+                        class="text-2xl font-semibold leading-[1.45] text-ink"
                     >
                         100M+ Satisfied Customers
                         <br>
@@ -451,7 +451,7 @@
 
                 {{-- Floating yellow dot --}}
                 <span
-                    class="trust-dot absolute right-8 top-24 h-10 w-10 rounded-full bg-[#f5df60]/80 shadow-[0_0_0_6px_rgba(245,223,96,.25)]"
+                    class="trust-dot absolute right-8 top-24 h-10 w-10 rounded-full bg-brass/80 shadow-[0_0_0_6px_rgba(176,131,47,.25)]"
                 ></span>
 
 
@@ -461,13 +461,13 @@
                 >
 
                     <p
-                        class="text-4xl font-bold tracking-tight text-[#102840] sm:text-5xl"
+                        class="text-4xl font-bold tracking-tight text-ink sm:text-5xl"
                     >
                         350k+
                     </p>
 
                     <p
-                        class="mt-1 text-base text-slate-600"
+                        class="mt-1 text-base text-muted"
                     >
                         Projects Completed
                     </p>
@@ -494,7 +494,7 @@
                 >
 
                     <h2
-                        class="trust-heading max-w-5xl text-4xl font-bold leading-[1.08] tracking-tight text-[#102840] sm:text-5xl lg:text-[56px]"
+                        class="trust-heading max-w-5xl text-4xl font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[56px]"
                     >
 
                         <span class="trust-heading-line">
@@ -518,7 +518,7 @@
 
                     {{-- Description --}}
                     <p
-                        class="trust-description mt-7 max-w-5xl text-base leading-8 text-slate-600 lg:text-lg"
+                        class="trust-description mt-7 max-w-5xl text-base leading-8 text-muted lg:text-lg"
                     >
 
                         We are committed to integrating sustainability,
@@ -544,7 +544,7 @@
 
                     {{-- SECOND IMAGE — slides LEFT ➜ RIGHT (delayed) --}}
                     <!-- <div
-                        class="trust-anim trust-image-second h-[300px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(11,33,54,.35)]"
+                        class="trust-anim trust-image-second h-[300px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(27,25,21,.30)]"
                         data-trust-second-image
                     >
 
@@ -578,13 +578,13 @@
                             >
 
                                 <span
-                                    class="text-base font-medium text-[#102840] lg:text-lg"
+                                    class="text-base font-medium text-ink lg:text-lg"
                                 >
                                     Experienced Professionals
                                 </span>
 
                                 <span
-                                    class="text-base font-medium text-[#102840] lg:text-lg"
+                                    class="text-base font-medium text-ink lg:text-lg"
                                 >
                                     85%
                                 </span>
@@ -615,13 +615,13 @@
                             >
 
                                 <span
-                                    class="text-base font-medium text-[#102840] lg:text-lg"
+                                    class="text-base font-medium text-ink lg:text-lg"
                                 >
                                     Quality Materials Only
                                 </span>
 
                                 <span
-                                    class="text-base font-medium text-[#102840] lg:text-lg"
+                                    class="text-base font-medium text-ink lg:text-lg"
                                 >
                                     90%
                                 </span>
@@ -652,13 +652,13 @@
                             >
 
                                 <span
-                                    class="text-base font-medium text-[#102840] lg:text-lg"
+                                    class="text-base font-medium text-ink lg:text-lg"
                                 >
                                     Eco-Friendly Solutions
                                 </span>
 
                                 <span
-                                    class="text-base font-medium text-[#102840] lg:text-lg"
+                                    class="text-base font-medium text-ink lg:text-lg"
                                 >
                                     70%
                                 </span>

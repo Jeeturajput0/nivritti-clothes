@@ -4,26 +4,26 @@
 
 @section('content')
 {{-- Hero --}}
-<section id="home-hero" class="relative flex min-h-[680px] items-end overflow-hidden bg-stone-900 pt-28 sm:min-h-[680px]" role="region" aria-roledescription="carousel" aria-label="Nivritti textile stories">
+<section id="home-hero" class="relative flex min-h-[680px] items-end overflow-hidden bg-ink pt-28 sm:min-h-[680px]" role="region" aria-roledescription="carousel" aria-label="Nivritti textile stories">
     <div class="absolute inset-0">
         <img data-hero-slide src="{{ asset('images/hero/5.jpg') }}" alt="Nivritti garment production floor with rows of sewing stations" class="absolute inset-0 h-full w-full object-cover object-center opacity-100 transition-opacity duration-1000">
         <img data-hero-slide src="{{ asset('images/hero/images (1).jpeg') }}" alt="Two Nivritti workers in orange headscarves at their machines" class="absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-1000" aria-hidden="true">
         <img data-hero-slide src="{{ asset('images/hero/images.jpeg') }}" alt="A long row of sewing stations inside the Nivritti workshop" class="absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-1000" aria-hidden="true">
     </div>
-    <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/10"></div>
-    <div class="relative mx-auto w-full max-w-7xl px-5 pb-16 pt-16 text-white sm:px-6 lg:px-8 lg:pb-20">
-        <p class="reveal mb-6 text-xs uppercase tracking-[.32em] text-white/75">Nivritti · Textiles with intention</p>
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-ink/60 via-ink/30 to-ink/10"></div>
+    <div class="relative mx-auto w-full max-w-7xl px-5 pb-16 pt-16 text-ivory sm:px-6 lg:px-8 lg:pb-20">
+        <p class="reveal mb-6 text-xs uppercase tracking-[.32em] text-ivory/75">Nivritti · Textiles with intention</p>
         <h1 class="reveal serif max-w-4xl text-5xl font-normal leading-[1.02] tracking-tight sm:text-6xl lg:text-8xl">Made of craft.<br><em class="font-normal">Made for tomorrow.</em></h1>
         <div class="mt-8 flex flex-col gap-7 sm:flex-row sm:items-end sm:justify-between">
-            <p class="reveal max-w-lg text-base leading-7 text-white/80">We bring thoughtful design, responsible making and the quiet beauty of textiles together.</p>
-            <div class="reveal flex flex-wrap gap-3"><a href="/catalog" class="inline-flex items-center gap-4 bg-[#102840] px-6 py-4 text-sm text-white transition hover:bg-[#0b2136]">Explore the collection <span aria-hidden="true">↗</span></a><a href="/about" class="inline-flex items-center border border-white/50 px-6 py-4 text-sm text-white transition hover:bg-white hover:text-stone-900">Our approach</a></div>
+            <p class="reveal max-w-lg text-base leading-7 text-ivory/80">We bring thoughtful design, responsible making and the quiet beauty of textiles together.</p>
+            <div class="reveal flex flex-wrap gap-3"><a href="/catalog" class="inline-flex items-center gap-4 rounded-full bg-brass px-6 py-4 text-sm font-semibold text-ink transition hover:bg-brass-soft">Explore the collection <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a><a href="/about" class="inline-flex items-center rounded-full border border-ivory/50 px-6 py-4 text-sm text-ivory transition hover:border-brass hover:bg-ivory/10">Our approach</a></div>
         </div>
         <div class="mt-14 flex items-center justify-between gap-6">
-            <div class="flex items-center gap-3 text-[10px] uppercase tracking-[.24em] text-white/70"><span class="h-px w-12 bg-white/60"></span> Scroll to discover</div>
+            <div class="flex items-center gap-3 text-[10px] uppercase tracking-[.24em] text-ivory/70"><span class="h-px w-12 bg-ivory/60"></span> Scroll to discover</div>
             <div class="flex items-center gap-2" aria-label="Choose hero image">
-                <button type="button" data-hero-dot="0" class="h-1 w-8 bg-white transition-all" aria-label="Show slide 1" aria-current="true"></button>
-                <button type="button" data-hero-dot="1" class="h-1 w-4 bg-white/45 transition-all" aria-label="Show slide 2" aria-current="false"></button>
-                <button type="button" data-hero-dot="2" class="h-1 w-4 bg-white/45 transition-all" aria-label="Show slide 3" aria-current="false"></button>
+                <button type="button" data-hero-dot="0" class="h-1 w-8 bg-ivory transition-all" aria-label="Show slide 1" aria-current="true"></button>
+                <button type="button" data-hero-dot="1" class="h-1 w-4 bg-ivory/45 transition-all" aria-label="Show slide 2" aria-current="false"></button>
+                <button type="button" data-hero-dot="2" class="h-1 w-4 bg-ivory/45 transition-all" aria-label="Show slide 3" aria-current="false"></button>
             </div>
         </div>
     </div>
@@ -51,8 +51,8 @@
                 const active = position === currentSlide;
                 dot.classList.toggle('w-8', active);
                 dot.classList.toggle('w-4', !active);
-                dot.classList.toggle('bg-white', active);
-                dot.classList.toggle('bg-white/45', !active);
+                dot.classList.toggle('bg-ivory', active);
+                dot.classList.toggle('bg-ivory/45', !active);
                 dot.setAttribute('aria-current', String(active));
             });
         };
@@ -130,12 +130,12 @@
         }
     }
 </style>
-<section id="about-intro" class="scroll-mt-28 overflow-hidden bg-[#F5F7FC] py-8 md:py-10 lg:py-12">
+<section id="about-intro" class="scroll-mt-28 overflow-hidden bg-ivory py-8 md:py-10 lg:py-12">
     <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:items-start lg:gap-12 lg:px-8">
         {{-- Editorial copy --}}
         <div class="relative z-10 order-2 max-w-4xl lg:order-1">
             <x-section-label label="About us" data-intro-label />
-            <h2 class="intro-heading serif mt-4 max-w-3xl text-4xl text-[#102840] sm:text-2xl" aria-label="Where tradition meets modern Nivritti craftsmanship.">
+            <h2 class="intro-heading serif mt-4 max-w-3xl text-4xl text-ink sm:text-5xl" aria-label="Where tradition meets modern Nivritti craftsmanship.">
                 <span class="heading-line sm:whitespace-nowrap" aria-hidden="true">
                     <span class="word-mask"><span class="heading-word">Where</span></span><span class="word-mask"><span class="heading-word">tradition</span></span>
                 </span>
@@ -146,41 +146,41 @@
                     <span class="word-mask"><span class="heading-word">Nivritti</span></span><span class="word-mask"><span class="heading-word">craftsmanship.</span></span>
                 </span>
             </h2>
-            <p data-intro-description class="mt-5 max-w-3xl text-base leading-8 text-slate-600 lg:text-lg">At Nivritti, traditional textile knowledge meets contemporary design. We work with considered materials and skilled makers to create apparel with thoughtful details, careful quality checks and lasting appeal.</p>
+            <p data-intro-description class="mt-5 max-w-3xl text-base leading-8 text-muted lg:text-lg">At Nivritti, traditional textile knowledge meets contemporary design. We work with considered materials and skilled makers to create apparel with thoughtful details, careful quality checks and lasting appeal.</p>
 
             {{-- Feature checklist --}}
             <div class="mt-6 grid max-w-3xl grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
                 @foreach(['Thoughtful material selection', 'Careful quality inspection', 'Textile development expertise', 'Experienced craft partners'] as $point)
-                <p data-intro-point class="flex items-center gap-3 text-sm font-medium text-[#102840] sm:text-base"><span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#e8cf43] text-xs font-bold text-[#102840]">✓</span>{{ $point }}</p>
+                <p data-intro-point class="flex items-center gap-3 text-sm font-medium text-ink sm:text-base"><span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brass text-xs font-bold text-ink">✓</span>{{ $point }}</p>
                 @endforeach
             </div>
 
             {{-- Editorial feature blocks --}}
-            <div class="mt-8 grid max-w-3xl gap-6 border-t border-slate-300 pt-6 sm:grid-cols-2 sm:gap-5">
-                <div data-intro-feature class="flex items-center gap-4"><span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-[#102840] text-[#f5df60]" aria-hidden="true"><svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <div class="mt-8 grid max-w-3xl gap-6 border-t border-ink/15 pt-6 sm:grid-cols-2 sm:gap-5">
+                <div data-intro-feature class="flex items-center gap-4"><span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-ink text-brass" aria-hidden="true"><svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
                             <path d="m4 7 8-4 8 4-8 4-8-4Z"></path>
                             <path d="m4 12 8 4 8-4M4 17l8 4 8-4"></path>
-                        </svg></span><span class="text-base font-medium leading-7 text-[#102840]">Collaborative Design<br>Partnerships</span></div>
-                <div data-intro-feature class="flex items-center gap-4"><span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-[#102840] text-[#f5df60]" aria-hidden="true"><svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                        </svg></span><span class="text-base font-medium leading-7 text-ink">Collaborative Design<br>Partnerships</span></div>
+                <div data-intro-feature class="flex items-center gap-4"><span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-ink text-brass" aria-hidden="true"><svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
                             <path d="M4 4h16v5H4zM7 9v11m10-11v11M4 20h16M9 13h6"></path>
                             <path d="M7 2v2m10-2v2"></path>
-                        </svg></span><span class="text-base font-medium leading-7 text-[#102840]">Textile Development<br>&amp; Finishing</span></div>
+                        </svg></span><span class="text-base font-medium leading-7 text-ink">Textile Development<br>&amp; Finishing</span></div>
             </div>
 
             {{-- CTA and contact --}}
             <div class="mt-7 flex flex-wrap items-center gap-x-7 gap-y-5">
-                <a href="/about" data-intro-cta class="group inline-flex items-center gap-4 rounded-full bg-[#f5df60] px-7 py-4 text-sm font-bold uppercase text-[#102840] transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#edda4f]">Explore more <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span></a>
-                <div data-intro-contact class="flex items-center gap-3 text-[#102840]"><span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#102840]" aria-hidden="true"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <a href="/about" data-intro-cta class="group inline-flex items-center gap-4 rounded-full bg-brass px-7 py-4 text-sm font-bold uppercase text-ink transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-brass-soft">Explore more <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span></a>
+                <div data-intro-contact class="flex items-center gap-3 text-ink"><span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-ink/30" aria-hidden="true"><svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
                             <path d="M6.6 3.5 9 3l2 4.8-2 1.4a15 15 0 0 0 5.8 5.8l1.4-2 4.8 2-.5 2.4a2 2 0 0 1-2 1.6A15.5 15.5 0 0 1 5 5.5a2 2 0 0 1 1.6-2Z"></path>
-                        </svg></span><span><span class="block text-sm text-slate-600">For enquiries</span><span class="mt-1 block text-lg font-semibold">+91 XXX XXX XXXX</span></span></div>
+                        </svg></span><span><span class="block text-sm text-muted">For enquiries</span><span class="mt-1 block text-lg font-semibold">+91 XXX XXX XXXX</span></span></div>
             </div>
         </div>
 
         {{-- Editorial image — right column on desktop --}}
         <div class="order-1 lg:order-2">
-            <div data-intro-image class="image-zoom relative h-[560px] overflow-hidden rounded-[28px] bg-slate-200">
+            <div data-intro-image class="image-zoom relative h-[560px] overflow-hidden rounded-[28px] bg-sand">
                 <img src="{{ asset('images/about/about-hero.jpg') }}" alt="Nivritti makers working across rows of sewing machines inside the workshop" class="h-full w-full object-cover" loading="lazy">
-                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#102840]/25 via-transparent to-transparent" aria-hidden="true"></div>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/25 via-transparent to-transparent" aria-hidden="true"></div>
             </div>
         </div>
 
@@ -188,12 +188,12 @@
 </section>
 
 {{-- Highlights --}}
-<section class="border-y border-slate-200 py-8 md:py-10">
+<section class="border-y border-ink/10 bg-sand py-8 md:py-10">
     <div class="mx-auto grid max-w-7xl grid-cols-2 gap-y-10 px-5 sm:px-6 md:grid-cols-4 lg:px-8">
         @foreach([['25+', 'years of craft'], ['18', 'partner workshops'], ['12', 'markets reached'], ['100%', 'care in every detail']] as $stat)
-        <div class="border-slate-300 px-4 first:pl-0 md:border-l md:px-8">
-            <p class="serif text-4xl tabular-nums text-[#102840]">{{ $stat[0] }}</p>
-            <p class="mt-2 text-xs uppercase tracking-[.16em] text-slate-600">{{ $stat[1] }}</p>
+        <div class="border-ink/15 px-4 first:pl-0 md:border-l md:px-8">
+            <p class="serif text-4xl tabular-nums text-ink">{{ $stat[0] }}</p>
+            <p class="mt-2 text-xs uppercase tracking-[.16em] text-muted">{{ $stat[1] }}</p>
         </div>
         @endforeach
     </div>
@@ -236,7 +236,7 @@
         ['Quality Fabrics', 'Premium quality fabrics including cotton, muslin, rayon and other comfortable materials.', 'images/categories/cotton-collection.jpg', 'Cotton · Muslin · Rayon'],
     ];
 @endphp
-<section aria-labelledby="shop-category-title" class="bg-[#F5F7FC] py-8 md:py-10 lg:py-12">
+<section aria-labelledby="shop-category-title" class="bg-ivory py-8 md:py-10 lg:py-12">
     <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="reveal mb-8 max-w-2xl lg:mb-9">
             <x-section-label label="Shop by category" />
@@ -250,23 +250,21 @@
                     @foreach ($categories as $category)
                     <div class="w-[250px] shrink-0 pr-4 sm:w-[290px] lg:w-[300px] lg:pr-5" @if ($pass === 1) aria-hidden="true" @endif>
                         <a href="/catalog" class="group/card relative block origin-center transition-transform duration-500 ease-out hover:z-10 hover:scale-[1.035] focus-visible:z-10 focus-visible:scale-[1.035]" @if ($pass === 1) tabindex="-1" @endif aria-label="Shop {{ $category[0] }}">
-                            <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-stone-200">
+                            <div class="relative aspect-[4/5] overflow-hidden rounded-3xl">
                                 <img src="{{ asset($category[2]) }}" alt="{{ $category[0] }}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover/card:scale-105" loading="lazy">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
-                                <div class="absolute inset-x-0 bottom-0 p-4 text-white transition-transform duration-500 ease-out group-hover/card:-translate-y-0.5 sm:p-5">
+                                <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/10 to-transparent"></div>
                                     <h3 class="text-sm font-semibold leading-snug">{{ $category[0] }}</h3>
-                                    <p class="mt-1 text-[10px] tracking-wide text-white/80">{{ $category[3] }}</p>
-                                </div>
+                                    <p class="mt-1 text-[10px] tracking-wide text-ivory/80">{{ $category[3] }}</p>
                             </div>
-                            <p class="mt-3 text-xs leading-5 text-slate-600">{{ $category[1] }}</p>
+                            <p class="mt-3 text-xs leading-5 text-muted">{{ $category[1] }}</p>
                         </a>
                     </div>
                     @endforeach
                 @endfor
             </div>
 
-            <div class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-[#F5F7FC] via-[#F5F7FC]/80 to-transparent sm:w-16" aria-hidden="true"></div>
-            <div class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[#F5F7FC] via-[#F5F7FC]/80 to-transparent sm:w-16" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-ivory via-ivory/80 to-transparent sm:w-16" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-ivory via-ivory/80 to-transparent sm:w-16" aria-hidden="true"></div>
         </div>
     </div>
 </section>
@@ -300,20 +298,20 @@
         ],
     ];
 @endphp
-<section id="services" class="services-section relative overflow-hidden bg-[#F5F7FC] py-8 md:py-10 lg:py-12" aria-labelledby="services-title">
-    <div class="pointer-events-none absolute -right-32 top-24 h-[420px] w-[420px] rounded-full border border-[#0b2136]/[.055]" aria-hidden="true"></div>
-    <div class="pointer-events-none absolute -left-40 bottom-10 h-[380px] w-[380px] rounded-full border border-[#0b2136]/[.04]" aria-hidden="true"></div>
+<section id="services" class="services-section relative overflow-hidden bg-sand py-8 md:py-10 lg:py-12" aria-labelledby="services-title">
+    <div class="pointer-events-none absolute -right-32 top-24 h-[420px] w-[420px] rounded-full border border-brass/25" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -left-40 bottom-10 h-[380px] w-[380px] rounded-full border border-ink/15" aria-hidden="true"></div>
 
     <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
             <x-section-label label="What we do" data-services-label />
-            <h2 id="services-title" data-services-heading class="serif mt-4 text-4xl text-[#0b2136] sm:text-2xl">Complete Nivritti &amp; Garment<br class="hidden sm:block"> Manufacturing Solutions</h2>
+            <h2 id="services-title" data-services-heading class="serif mt-4 text-4xl text-ink sm:text-2xl">Complete Nivritti &amp; Garment<br class="hidden sm:block"> Manufacturing Solutions</h2>
         </div>
 
         <div class="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4 lg:mt-12 lg:gap-6">
             @foreach($services as $service)
-            <article data-service-card class="service-card flex h-full flex-col rounded-3xl border border-[#e6edf7] bg-[#f3f6fc] p-6 sm:p-7">
-                <span class="service-icon flex h-14 w-14 items-center justify-center rounded-full bg-[#e8cf43] text-[#0b2136]" aria-hidden="true">
+            <article data-service-card class="service-card flex h-full flex-col rounded-3xl border border-ink/10 bg-ivory p-6 sm:p-7">
+                <span class="service-icon flex h-14 w-14 items-center justify-center rounded-full bg-brass text-ink" aria-hidden="true">
                     @switch($service['icon'])
                         @case('layers')
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg>
@@ -330,17 +328,17 @@
                     @endswitch
                 </span>
 
-                <p class="mt-7 text-[11px] font-semibold tracking-[.16em] text-[#0b2136]/35" aria-hidden="true">{{ $service['number'] }}</p>
-                <h3 class="mt-2.5 text-xl font-semibold leading-snug tracking-[-.01em] text-[#0b2136] lg:text-[21px] xl:min-h-[3.5rem]">{{ $service['title'] }}</h3>
-                <p class="mt-3 text-sm leading-7 text-slate-500">{{ $service['description'] }}</p>
+                <p class="mt-7 text-[11px] font-semibold tracking-[.16em] text-muted" aria-hidden="true">{{ $service['number'] }}</p>
+                <h3 class="mt-2.5 text-xl font-semibold leading-snug tracking-[-.01em] text-ink lg:text-[21px] xl:min-h-[3.5rem]">{{ $service['title'] }}</h3>
+                <p class="mt-3 text-sm leading-7 text-muted">{{ $service['description'] }}</p>
             </article>
             @endforeach
         </div>
 
         <div class="mt-4 lg:mt-2">
             <div class="flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-left">
-                <p class="max-w-xl text-lg font-medium leading-8 tracking-[-.01em] text-[#0b2136] lg:text-xl">Don't Hesitate, Contact Us For Better Help And Services.</p>
-                <a href="/about" class="services-cta inline-flex shrink-0 items-center gap-3 rounded-full bg-[#e8cf43] px-8 py-4 text-sm font-semibold text-[#0b2136]">
+                <p class="max-w-xl text-lg font-medium leading-8 tracking-[-.01em] text-ink lg:text-xl">Don't Hesitate, Contact Us For Better Help And Services.</p>
+                <a href="/about" class="services-cta inline-flex shrink-0 items-center gap-3 rounded-full bg-brass px-8 py-4 text-sm font-semibold text-ink">
                     See All Services
                     <span class="services-cta-arrow" aria-hidden="true">→</span>
                 </a>
@@ -410,19 +408,19 @@
         ],
     ];
 @endphp
-<section id="collection" data-collection-section class="relative overflow-hidden bg-[#F5F7FC]  " aria-labelledby="collection-title">
+<section id="collection" data-collection-section class="relative overflow-hidden bg-ivory" aria-labelledby="collection-title">
     <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
             <x-section-label label="Our collection" data-collection-label />
-            <h2 id="collection-title" data-collection-heading class="serif mt-4 text-4xl text-[#102840] sm:text-2xl">Explore Our Premium Collection</h2>
-            <p data-collection-text class="mt-5 max-w-2xl text-base leading-8 text-slate-600 lg:text-lg">Discover thoughtfully crafted textiles designed with quality, comfort and modern fashion in mind.</p>
+            <h2 id="collection-title" data-collection-heading class="serif mt-4 text-4xl text-ink sm:text-5xl">Explore Our Premium Collection</h2>
+            <p data-collection-text class="mt-5 max-w-2xl text-base leading-8 text-muted lg:text-lg">Discover thoughtfully crafted textiles designed with quality, comfort and modern fashion in mind.</p>
         </div>
 
         <div data-collection-grid class="mt-10 grid gap-x-4 gap-y-7 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4 lg:gap-x-5 lg:gap-y-8">
             @foreach($products as $index => $product)
             <article data-product-card class="h-full">
                 <a href="/catalog" class="product-card group flex h-full flex-col">
-                    <div class="product-media relative aspect-[4/5] shrink-0 overflow-hidden rounded-2xl bg-[#e8eef7]">
+                    <div class="product-media relative aspect-[4/5] shrink-0 overflow-hidden rounded-2xl bg-sand">
                         <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" class="product-img product-img--main absolute inset-0 h-full w-full object-cover" loading="lazy">
                         <img src="{{ asset($product['hover']) }}" alt="" class="product-img product-img--alt absolute inset-0 h-full w-full object-cover" loading="lazy" aria-hidden="true">
                         <span class="product-overlay pointer-events-none absolute inset-0" aria-hidden="true"></span>
@@ -430,16 +428,16 @@
 
                     <div class="mt-3.5 flex flex-1 flex-col">
                         <div class="flex items-center justify-between gap-3">
-                            <p class="product-category text-[9px] font-semibold uppercase tracking-[.18em] text-slate-500 opacity-75">{{ $product['category'] }}</p>
-                            <span class="text-[9px] font-medium tracking-[.16em] text-slate-400" aria-hidden="true">0{{ $index + 1 }}</span>
+                            <p class="product-category text-[9px] font-semibold uppercase tracking-[.18em] text-muted opacity-75">{{ $product['category'] }}</p>
+                            <span class="text-[9px] font-medium tracking-[.16em] text-muted" aria-hidden="true">0{{ $index + 1 }}</span>
                         </div>
-                        <h3 class="product-title mt-1.5 text-2xl font-semibold leading-snug tracking-[-.01em] text-[#102840]">{{ $product['name'] }}</h3>
-                        <p class="mt-1.5 text-[13px] leading-6 text-slate-600">{{ $product['description'] }}</p>
+                        <h3 class="product-title mt-1.5 text-2xl font-semibold leading-snug tracking-[-.01em] text-ink">{{ $product['name'] }}</h3>
+                        <p class="mt-1.5 text-[13px] leading-6 text-muted">{{ $product['description'] }}</p>
 
                         <div class="mt-auto pt-3">
-                            <div class="flex items-center justify-between gap-3 border-t border-[#102840]/10 pt-3">
-                                <span class="text-[13px] font-semibold text-[#102840]">Order now</span>
-                                <span class="product-cta-badge flex h-8 w-8 items-center justify-center rounded-full bg-[#f5df60] text-[#102840]" aria-hidden="true">
+                            <div class="flex items-center justify-between gap-3 border-t border-ink/10 pt-3">
+                                <span class="text-[13px] font-semibold text-ink">Order now</span>
+                                <span class="product-cta-badge flex h-8 w-8 items-center justify-center rounded-full bg-brass text-ink" aria-hidden="true">
                                     <svg class="product-cta-arrow h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
                                 </span>
                             </div>
@@ -476,62 +474,58 @@ $reviews = [
 ];
 @endphp
 @include('trust')
-<section id="reviews" class="relative mx-5 scroll-mt-24 overflow-hidden rounded-[7px] bg-[#0b2136] py-8 text-white md:mx-[120px] md:py-10 lg:py-12" aria-labelledby="reviews-title">
-    <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div class="absolute inset-0 opacity-[.045]" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 88px 88px;"></div>
-        <div class="absolute -right-28 -top-36 h-[560px] w-[560px] rounded-full border border-white/[.07]"></div>
-        <div class="absolute -right-10 -top-16 h-[400px] w-[400px] rounded-full border border-white/[.05]"></div>
-        <div class="absolute -bottom-40 -left-24 h-[460px] w-[460px] rounded-full border border-white/[.04]"></div>
-        <span class="absolute left-3 top-10 h-6 w-6 rounded-full bg-[#c9b64a]/70 sm:left-7"></span>
-    </div>
-
-    <div class="relative mx-auto max-w-7xl px-8">
-        <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_260px_minmax(0,1.42fr)] xl:grid-rows-[auto_auto] xl:items-start xl:gap-x-6 xl:gap-y-6">
-            <div class="reveal xl:col-span-2 xl:col-start-1 xl:row-start-1">
-                <x-section-label label="Customer testimonials" variant="inverse" />
-                <h2 id="reviews-title" class="serif mt-3 text-2xl sm:text-3xl">Comments Regarding The<br class="hidden sm:block"> Nivritti Industry</h2>
+<section id="reviews" class="scroll-mt-24 bg-ivory px-5 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="reviews-title">
+    <div class="mx-auto max-w-7xl">
+        <div class="reveal mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between lg:mb-10">
+            <div>
+                <x-section-label label="Customer testimonials" />
+                <h2 id="reviews-title" class="serif mt-4 max-w-2xl text-4xl leading-tight text-ink sm:text-5xl">Good work is remembered.</h2>
             </div>
+        </div>
 
-            <div class="reveal flex flex-col justify-between gap-6 xl:col-start-1 xl:row-start-2 xl:h-[340px]">
-                <div>
-                    <div class="flex items-center">
-                        <img src="{{ asset('images/instagram/instagram-1.jpg') }}" alt="Nivritti customer" class="h-11 w-11 rounded-full border-2 border-[#0b2136] object-cover" loading="lazy">
-                        <img src="{{ asset('images/instagram/instagram-4.jpg') }}" alt="" class="h-11 w-11 rounded-full border-2 border-[#0b2136] object-cover -ml-3" loading="lazy" aria-hidden="true">
-                        <img src="{{ asset('images/instagram/instagram-3.jpg') }}" alt="" class="h-11 w-11 rounded-full border-2 border-[#0b2136] object-cover -ml-3" loading="lazy" aria-hidden="true">
-                        <span class="ml-2 flex h-11 w-11 items-center justify-center rounded-full bg-[#e8cf43] text-[11px] font-semibold text-[#0b2136]" aria-hidden="true">10k</span>
-                    </div>
-                    <p class="mt-4 text-lg font-medium">More Than 10K+ Customers</p>
+        <div class="grid gap-4 lg:grid-cols-[.9fr_1.1fr] lg:gap-6">
+            <div class="image-zoom reveal group relative min-h-[300px] overflow-hidden rounded-[1.75rem] bg-sand sm:min-h-[380px] lg:min-h-[440px]">
+                <img src="{{ asset('images/about/about-1.jpg') }}" alt="A Nivritti maker carefully stitching fabric at her machine" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/5 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-24 sm:bottom-8 sm:left-8 sm:right-32">
+                    <p class="text-[9px] font-semibold uppercase tracking-[.22em] text-brass-light">Thoughtful textiles</p>
+                    <p class="serif mt-2 max-w-sm text-2xl leading-snug text-ivory sm:text-3xl">Made with care, built on trust.</p>
                 </div>
-                <p class="max-w-xs text-sm leading-6 text-white/55">Trusted by over 10,000 satisfied customers, we pride ourselves on delivering exceptional service.</p>
+                <div class="absolute bottom-5 right-5 h-24 w-20 overflow-hidden rounded-xl border-2 border-ivory bg-sand shadow-[0_12px_30px_-12px_rgba(27,25,21,.55)] sm:bottom-7 sm:right-7 sm:h-36 sm:w-28" aria-hidden="true">
+                    <img src="{{ asset('images/process/choose-2.jpg') }}" alt="" class="h-full w-full object-cover" loading="lazy">
+                    <span class="absolute inset-x-0 bottom-0 bg-ink/65 px-1.5 py-1 text-center text-[7px] font-medium uppercase tracking-[.12em] text-ivory sm:text-[8px]">In the making</span>
+                </div>
             </div>
 
-            <div class="image-zoom reveal relative h-[280px] overflow-hidden rounded-[28px] bg-white/5 sm:h-[340px] xl:col-start-2 xl:row-start-2 xl:-translate-y-3">
-                <img src="{{ asset('images/about/about-1.jpg') }}" alt="A Nivritti maker carefully stitching fabric at her machine" class="h-full w-full object-cover" loading="lazy">
-            </div>
-
-            <div class="review-slider xl:col-start-3 xl:row-start-2" data-review-slider>
-                <div class="review-stage relative grid min-h-[250px]" aria-live="polite">
-                    @foreach($reviews as $index => $review)
-                    <div class="review-slide col-start-1 row-start-1 {{ $index === 0 ? 'is-active' : '' }}" data-review-slide>
-                        <div class="flex items-start gap-3">
-                            <span class="review-quote serif shrink-0 text-5xl leading-[.65] text-[#f5df60]" aria-hidden="true">“</span>
-                            <p data-review-text class="review-text min-w-0 flex-1 break-words text-base font-medium leading-[1.5] text-white/95 sm:text-lg">{{ $review['text'] }}</p>
-                        </div>
-                        <div class="mt-7 flex items-center gap-4 border-t border-white/20 pt-5">
-                            <img data-review-avatar src="{{ asset($review['image']) }}" alt="" class="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" aria-hidden="true">
-                            <div>
-                                <p data-review-name class="text-base font-semibold text-white">{{ $review['name'] }}</p>
-                                <p data-review-role class="mt-1 text-sm text-white/55">{{ $review['designation'] }}</p>
+            <div class="review-slider relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-[1.75rem] border border-ink/10 bg-sand p-6 sm:min-h-[380px] sm:p-9 lg:min-h-[440px] lg:p-12" data-review-slider>
+                <div class="pointer-events-none absolute -bottom-20 -right-16 h-56 w-56 rounded-full border border-brass/20" aria-hidden="true"></div>
+                <div class="pointer-events-none absolute -bottom-10 -right-6 h-36 w-36 rounded-full border border-brass/20" aria-hidden="true"></div>
+                <div class="relative">
+                    <p class="text-[9px] font-semibold uppercase tracking-[.2em] text-brass-deep">A note from our partners</p>
+                    <div class="review-stage relative mt-7 grid min-h-[210px] sm:mt-10 sm:min-h-[220px]" aria-live="polite">
+                        @foreach($reviews as $index => $review)
+                        <div class="review-slide col-start-1 row-start-1 {{ $index === 0 ? 'is-active' : '' }}" data-review-slide>
+                            <span class="review-quote serif block h-10 text-6xl leading-none text-brass" aria-hidden="true">“</span>
+                            <p data-review-text class="review-text mt-3 max-w-2xl break-words text-lg font-medium leading-[1.55] text-ink sm:text-xl lg:text-2xl">{{ $review['text'] }}</p>
+                            <div class="mt-6 flex items-center gap-3 border-t border-ink/10 pt-5">
+                                <img data-review-avatar src="{{ asset($review['image']) }}" alt="" class="h-12 w-12 shrink-0 rounded-full border-2 border-ivory object-cover shadow-sm" loading="lazy" aria-hidden="true">
+                                <div>
+                                    <p data-review-name class="text-sm font-semibold text-ink">{{ $review['name'] }}</p>
+                                    <p data-review-role class="mt-1 text-xs text-muted">{{ $review['designation'] }}</p>
+                                </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
 
-                <div class="mt-6 flex items-center gap-2" role="group" aria-label="Choose a review">
-                    @foreach($reviews as $index => $review)
-                    <button type="button" class="review-dot {{ $index === 0 ? 'is-active' : '' }}" data-review-dot data-review-index="{{ $index }}" aria-label="View review {{ $index + 1 }}" @if($index === 0) aria-current="true" @endif></button>
-                    @endforeach
+                <div class="relative mt-5 flex items-center justify-between border-t border-ink/10 pt-5">
+                    <p class="text-[9px] font-medium uppercase tracking-[.18em] text-muted">Partnership, in their words</p>
+                    <div class="flex items-center gap-3" role="group" aria-label="Choose a review">
+                        @foreach($reviews as $index => $review)
+                        <button type="button" class="review-dot {{ $index === 0 ? 'is-active' : '' }}" data-review-dot data-review-index="{{ $index }}" aria-label="View review {{ $index + 1 }}" @if($index === 0) aria-current="true" @endif></button>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
@@ -544,14 +538,14 @@ $reviews = [
         {{-- Left content --}}
         <div class="max-w-3xl">
             <x-section-label label="Let's begin" />
-            <h2 class="serif mt-5 text-4xl leading-tight text-[#0b2136] sm:text-5xl lg:text-6xl">Let's make something meaningful.</h2>
-            <p class="mt-6 max-w-xl text-sm leading-7 text-stone-600 lg:text-base">Have an idea, a question or a project in mind? We would love to hear what you are working on.</p>
+            <h2 class="serif mt-5 text-4xl leading-tight text-ink sm:text-5xl lg:text-6xl">Let's make something meaningful.</h2>
+            <p class="mt-6 max-w-xl text-sm leading-7 text-muted lg:text-base">Have an idea, a question or a project in mind? We would love to hear what you are working on.</p>
         </div>
 
         {{-- Right buttons --}}
         <div class="flex w-full shrink-0 flex-wrap justify-center gap-3 sm:w-auto lg:justify-end">
-            <a href="/contact" class="inline-flex w-full items-center justify-center whitespace-nowrap bg-[#edf05a] px-7 py-4 text-sm text-black transition duration-300 hover:-translate-y-1 hover:bg-[#e6fa64] sm:w-auto">Start a conversation ↗</a>
-            <a href="/catalog" class="inline-flex w-full items-center justify-center whitespace-nowrap border border-stone-400 px-7 py-4 text-sm text-stone-900 transition duration-300 hover:-translate-y-1 hover:border-stone-900 sm:w-auto">View collection</a>
+            <a href="/contact" class="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-full bg-brass px-7 py-4 text-sm font-semibold text-ink transition duration-300 hover:-translate-y-1 hover:bg-brass-soft sm:w-auto">Start a conversation <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
+            <a href="/catalog" class="inline-flex w-full items-center justify-center whitespace-nowrap rounded-full border border-ink/25 px-7 py-4 text-sm text-ink transition duration-300 hover:-translate-y-1 hover:border-brass sm:w-auto">View collection</a>
         </div>
     </div>
 </section>

@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f8f6f2">
+    <meta name="theme-color" content="#faf7f1">
     <title>@yield('title', 'Nivritti | Thoughtful textiles')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         html { scroll-behavior: smooth; }
-        body { background: #F5F7FC; color: #102840; }
-        .serif { font-family: Georgia, 'Times New Roman', serif; }
+        body { background: var(--color-ivory); color: var(--color-ink); }
+        .serif { font-family: var(--font-serif); }
         .js .reveal { opacity: 0; }
         .js.anim-failed .reveal { opacity: 1 !important; }
         .anim-word-mask { display: inline-block; overflow: hidden; vertical-align: bottom; margin-bottom: -.12em; padding-bottom: .12em; }
@@ -21,28 +21,28 @@
         .anim-cta { transition: transform .3s cubic-bezier(.2,.7,.2,1), background-color .3s ease, color .3s ease, border-color .3s ease; }
         .anim-cta:hover { transform: translateY(-2px) scale(1.01); }
         .anim-cta .anim-cta-arrow { display: inline-block; transition: transform .3s cubic-bezier(.2,.7,.2,1); }
-        .anim-cta:hover .anim-cta-arrow { transform: translateX(4px); }
+        .anim-cta:hover .anim-cta-arrow { transform: translate(3px, -3px); }
         .review-slide { grid-area: 1 / 1; }
         .review-slide + .review-slide { visibility: hidden; opacity: 0; }
-        .review-dot { width: 8px; height: 8px; border-radius: 9999px; background: rgba(255,255,255,.28); transition: background-color .3s ease, transform .3s ease; }
-        .review-dot:hover { background: rgba(255,255,255,.55); }
-        .review-dot.is-active { background: #f5df60; transform: scale(1.15); }
-        .review-dot:focus-visible { outline: 2px solid #f5df60; outline-offset: 4px; }
+        .review-dot { width: 8px; height: 8px; border-radius: 9999px; background: rgba(27,25,21,.24); transition: background-color .3s ease, transform .3s ease; }
+        .review-dot:hover { background: rgba(27,25,21,.52); }
+        .review-dot.is-active { background: var(--color-brass); transform: scale(1.15); }
+        .review-dot:focus-visible { outline: 2px solid var(--color-brass); outline-offset: 4px; }
         .service-card { transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s cubic-bezier(.2,.7,.2,1), border-color .4s ease; }
         .service-icon { transition: transform .45s cubic-bezier(.2,.7,.2,1); }
         @media (hover: hover) {
-            .service-card:hover { transform: translateY(-8px) scale(1.04); border-color: #dbe6f5; box-shadow: 0 30px 60px -30px rgba(11,33,54,.32); }
+            .service-card:hover { transform: translateY(-8px) scale(1.04); border-color: var(--color-brass); box-shadow: 0 30px 60px -30px rgba(27,25,21,.20); }
             .service-card:hover .service-icon { transform: scale(1.08) rotate(3deg); }
-            .services-cta:hover { transform: translateY(-4px); background-color: #d9bf35; box-shadow: 0 18px 32px -20px rgba(11,33,54,.45); }
+            .services-cta:hover { transform: translateY(-4px); background-color: var(--color-brass-soft); box-shadow: 0 18px 32px -20px rgba(27,25,21,.26); }
             .services-cta:hover .services-cta-arrow { transform: translateX(5px); }
         }
         @media (hover: none) {
-            .service-card:active { transform: translateY(-4px) scale(1.02); border-color: #dbe6f5; box-shadow: 0 22px 44px -26px rgba(11,33,54,.28); }
+            .service-card:active { transform: translateY(-4px) scale(1.02); border-color: var(--color-brass); box-shadow: 0 22px 44px -26px rgba(27,25,21,.20); }
             .service-card:active .service-icon { transform: scale(1.06) rotate(2deg); }
         }
         .services-cta { transition: transform .4s cubic-bezier(.2,.7,.2,1), background-color .3s ease, box-shadow .4s ease; }
         .services-cta .services-cta-arrow { display: inline-block; transition: transform .4s cubic-bezier(.2,.7,.2,1); }
-        .services-cta:focus-visible { outline: 2px solid #0b2136; outline-offset: 3px; }
+        .services-cta:focus-visible { outline: 2px solid var(--color-brass); outline-offset: 3px; }
         .js.anim-failed .service-card { opacity: 1 !important; transform: none !important; filter: none !important; }
         .js.anim-failed .services-section [data-services-label],
         .js.anim-failed .services-section [data-services-dot],
@@ -54,23 +54,23 @@
         .product-media { transition: box-shadow .45s cubic-bezier(.2,.7,.2,1); }
         .product-img { transition: opacity .6s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
         .product-img--alt { opacity: 0; transform: scale(1.05); }
-        .product-overlay { background-color: #0b2136; opacity: 0; transition: opacity .5s ease; }
+        .product-overlay { background-color: var(--color-ink); opacity: 0; transition: opacity .5s ease; }
         .product-title { transition: transform .4s cubic-bezier(.2,.7,.2,1); }
         .product-category { transition: opacity .4s ease; }
         .product-cta-badge { transition: transform .4s cubic-bezier(.2,.7,.2,1), background-color .4s ease; }
         .product-cta-arrow { transition: transform .4s cubic-bezier(.2,.7,.2,1); }
-        .product-card:focus-visible { outline: 2px solid #102840; outline-offset: 4px; }
+        .product-card:focus-visible { outline: 2px solid var(--color-brass); outline-offset: 4px; }
         .product-card:focus-visible .product-img--main { opacity: 0; }
         .product-card:focus-visible .product-img--alt { opacity: 1; transform: scale(1); }
         @media (hover: hover) {
             .product-card:hover { transform: translateY(-8px); }
-            .product-card:hover .product-media { box-shadow: 0 30px 55px -34px rgba(11,33,54,.42); }
+            .product-card:hover .product-media { box-shadow: 0 30px 55px -34px rgba(27,25,21,.32); }
             .product-card:hover .product-img--main { opacity: 0; transform: scale(1.04); }
             .product-card:hover .product-img--alt { opacity: 1; transform: scale(1); }
             .product-card:hover .product-overlay { opacity: .08; }
             .product-card:hover .product-title { transform: translateY(-3px); }
             .product-card:hover .product-category { opacity: 1; }
-            .product-card:hover .product-cta-badge { transform: translateY(-2px); background-color: #efd64b; }
+            .product-card:hover .product-cta-badge { transform: translateY(-2px); background-color: var(--color-brass-soft); }
             .product-card:hover .product-cta-arrow { transform: translateX(5px); }
         }
         @media (hover: none) {

@@ -5,8 +5,8 @@
 
 <p {{ $attributes->class([
     'inline-flex items-center gap-3 rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-wide',
-    $variant === 'inverse' ? 'border-white/25 text-white/85' : 'border-slate-300 text-[#102840]',
+    $variant === 'inverse' ? 'border-ivory/25 text-ivory/85' : 'border-ink/15 text-ink',
 ]) }}>
-    <span class="h-2 w-2 shrink-0 rounded-full bg-[#f5df60]" aria-hidden="true"></span>
+    <span class="h-2 w-2 shrink-0 rounded-full bg-brass" aria-hidden="true"></span>
     {{ $label }}
 </p>

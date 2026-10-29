@@ -63,6 +63,9 @@ const ARROW_PATTERN = /[↗→]/;
 const prepareCta = (cta) => {
     cta.classList.add('anim-cta');
 
+    // Icons rendered from markup (Lucide) already carry the arrow class.
+    if (cta.querySelector('.anim-cta-arrow')) return;
+
     const arrowSpans = [...cta.querySelectorAll('span')].filter(
         (span) => ARROW_PATTERN.test(span.textContent) && span.children.length === 0
     );
@@ -313,7 +316,6 @@ const buildSection = (section) => {
             trigger: section,
             start: 'top 75%',
             once: !replayOnScroll,
-            ...(replayOnScroll ? { toggleActions: 'play reverse play reverse' } : {}),
         },
     });
 
@@ -512,42 +514,59 @@ const buildSection = (section) => {
         const position = cardPosition + index * 0.1;
 
         if (isGallery) {
-            // Alternate slide direction: even items slide LEFT ➜ RIGHT,
-            // odd items slide RIGHT ➜ LEFT.
+            // Gallery images animate one by one and replay every time they
+            // scroll into view from either direction, so the motion also
+            // shows while scrolling back up.
+            // Even items slide LEFT ➜ RIGHT, odd items slide RIGHT ➜ LEFT.
             const slideFromLeft = index % 2 === 0;
+            const innerImage = card.querySelector('img');
 
-            timeline.fromTo(
+            gsap.set(card, { opacity: 0 });
+
+            const galleryTimeline = gsap.timeline({
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 88%',
+                    toggleActions: 'restart none none restart',
+                },
+            });
+
+            galleryTimeline.fromTo(
                 card,
                 {
                     opacity: 0,
-                    x: slideFromLeft ? -80 : 80,
-                    scale: 0.96,
-                    filter: 'blur(7px)',
+                    x: slideFromLeft ? -120 : 120,
+                    scale: 0.95,
+                    filter: 'blur(8px)',
                 },
                 {
                     opacity: 1,
                     x: 0,
                     scale: 1,
                     filter: 'blur(0px)',
-                    duration: 1.1,
-                    ease: 'power3.out',
-                    clearProps: 'transform,filter',
+                    duration: 1.7,
+                    ease: 'power2.out',
                     onComplete: () => {
+                        gsap.set(card, { clearProps: 'transform,filter' });
                         card.classList.add('is-revealed');
                     },
-                },
-                position
+                }
             );
 
-            const innerImage = card.querySelector('img');
             if (innerImage) {
-                timeline.fromTo(
+                galleryTimeline.fromTo(
                     innerImage,
-                    { scale: 1.05 },
-                    { scale: 1, duration: 1.2, clearProps: 'transform' },
-                    position
+                    { scale: 1.1 },
+                    {
+                        scale: 1,
+                        duration: 2,
+                        ease: 'power2.out',
+                        onComplete: () => gsap.set(innerImage, { clearProps: 'transform' }),
+                    },
+                    0
                 );
             }
+
             return;
         }
 
@@ -652,6 +671,7 @@ const init = () => {
         .forEach(buildSection);
 
     ScrollTrigger.refresh();
+    window.__nivrittiRefreshAnimations = () => ScrollTrigger.refresh();
     window.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });
 };
 

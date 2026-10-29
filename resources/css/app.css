@@ -1,11 +1,38 @@
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: Georgia, 'Times New Roman', serif;
+
+    /* Nivritti brand palette — warm ivory, sand and brass */
+    --color-ivory: #faf7f1;
+    --color-sand: #f1e9db;
+    --color-sand-deep: #e7dcc7;
+    --color-ink: #1b1915;
+    --color-muted: #6c6457;
+    --color-brass: #b0832f;
+    --color-brass-soft: #cfa75a;
+    --color-brass-deep: #7f5d1f;
+    --color-brass-light: #e0c07f;
+}
+
+@layer base {
+    html {
+        color-scheme: light;
+    }
+
+    ::selection {
+        background-color: var(--color-brass);
+        color: var(--color-ink);
+    }
+
+    :where(a, button, input, select, textarea, summary):focus-visible {
+        outline: 2px solid var(--color-brass-deep);
+        outline-offset: 3px;
+    }
 }

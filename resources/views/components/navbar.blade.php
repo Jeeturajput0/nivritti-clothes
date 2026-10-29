@@ -5,7 +5,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
             id="nav-container"
-            class="mt-4 flex h-16 items-center justify-between rounded-full border border-white/30 bg-white/70 px-5 shadow-lg shadow-black/5 backdrop-blur-xl transition-all duration-500 lg:px-7"
+            class="mt-4 flex h-16 items-center justify-between rounded-full border border-ink/10 bg-ivory/90 px-5 shadow-lg shadow-ink/5 backdrop-blur-xl transition-all duration-500 lg:px-7"
         >
             {{-- Logo --}}
             <a href="/" class="flex items-center">
@@ -20,42 +20,42 @@
             <div class="hidden items-center gap-8 md:flex">
                 <a
                     href="/"
-                    class="nav-link group relative text-sm font-medium text-slate-700 transition duration-300 hover:text-[#102840]"
+                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Home
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-[#102840] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 <a
                     href="/about"
-                    class="nav-link group relative text-sm font-medium text-slate-700 transition duration-300 hover:text-[#102840]"
+                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
                 >
                     About
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-[#102840] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 <a
                     href="/gallery"
-                    class="nav-link group relative text-sm font-medium text-slate-700 transition duration-300 hover:text-[#102840]"
+                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Gallery
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-[#102840] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 <a
                     href="/catalog"
-                    class="nav-link group relative text-sm font-medium text-slate-700 transition duration-300 hover:text-[#102840]"
+                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Collection
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-[#102840] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 <a
                     href="/contact"
-                    class="nav-link group relative text-sm font-medium text-slate-700 transition duration-300 hover:text-[#102840]"
+                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Contact
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-[#102840] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
 
@@ -63,7 +63,7 @@
             <div class="flex items-center gap-2">
                 {{-- Search --}}
                 <button
-                    class="hidden h-10 w-10 items-center justify-center rounded-full text-slate-700 transition duration-300 hover:bg-stone-900 hover:text-white sm:flex"
+                    class="hidden h-10 w-10 items-center justify-center rounded-full text-ink transition duration-300 hover:bg-sand-deep hover:text-brass-deep sm:flex"
                     aria-label="Search"
                 >
                     <svg
@@ -83,7 +83,7 @@
                 {{-- Mobile Menu Button --}}
                 <button
                     id="menu-btn"
-                    class="flex h-10 w-10 items-center justify-center rounded-full text-stone-800 transition hover:bg-stone-900 hover:text-white md:hidden"
+                    class="flex h-10 w-10 items-center justify-center rounded-full text-ink transition hover:bg-sand-deep hover:text-brass-deep md:hidden"
                     aria-label="Open menu"
                 >
                     <svg
@@ -107,40 +107,40 @@
         {{-- Mobile Menu --}}
         <div
             id="mobile-menu"
-            class="mt-2 hidden overflow-hidden rounded-3xl border border-white/30 bg-white/90 p-4 shadow-xl backdrop-blur-xl md:hidden"
+            class="mt-2 hidden overflow-hidden rounded-3xl border border-ink/10 bg-ivory/95 p-4 shadow-xl backdrop-blur-xl md:hidden"
         >
             <div class="flex flex-col gap-1">
                 <a
                     href="/"
-                    class="rounded-2xl px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-[#102840]"
+                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
                 >
                     Home
                 </a>
 
                 <a
                     href="/about"
-                    class="rounded-2xl px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-[#102840]"
+                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
                 >
                     About
                 </a>
 
                 <a
                     href="/gallery"
-                    class="rounded-2xl px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-[#102840]"
+                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
                 >
                     Gallery
                 </a>
 
                 <a
                     href="/catalog"
-                    class="rounded-2xl px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-[#102840]"
+                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
                 >
                     Collection
                 </a>
 
                 <a
                     href="/contact"
-                    class="rounded-2xl px-4 py-3 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-[#102840]"
+                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
                 >
                     Contact
                 </a>
@@ -159,11 +159,11 @@
             const isScrolled = window.scrollY > 40;
 
             navContainer.classList.toggle('mt-4', !isScrolled);
-            navContainer.classList.toggle('bg-yellow/70', !isScrolled);
-            navContainer.classList.toggle('shadow-black/5', !isScrolled);
+            navContainer.classList.toggle('bg-ivory/90', !isScrolled);
+            navContainer.classList.toggle('shadow-ink/5', !isScrolled);
 
             navContainer.classList.toggle('mt-2', isScrolled);
-            navContainer.classList.toggle('bg-yellow/90', isScrolled);
+            navContainer.classList.toggle('bg-ivory', isScrolled);
             navContainer.classList.toggle('shadow-xl', isScrolled);
         });
     }
