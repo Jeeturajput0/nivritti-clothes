@@ -134,7 +134,7 @@
     <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:items-start lg:gap-12 lg:px-8">
         {{-- Editorial copy --}}
         <div class="relative z-10 order-2 max-w-4xl lg:order-1">
-            <p data-intro-label class="inline-flex items-center gap-3 rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#102840]"><span class="h-2 w-2 bg-[#f5df60]"></span> About us</p>
+            <x-section-label label="About us" data-intro-label />
             <h2 class="intro-heading serif mt-4 max-w-3xl text-4xl text-[#102840] sm:text-2xl" aria-label="Where tradition meets modern Nivritti craftsmanship.">
                 <span class="heading-line sm:whitespace-nowrap" aria-hidden="true">
                     <span class="word-mask"><span class="heading-word">Where</span></span><span class="word-mask"><span class="heading-word">tradition</span></span>
@@ -239,7 +239,7 @@
 <section aria-labelledby="shop-category-title" class="bg-[#F5F7FC] py-8 md:py-10 lg:py-12">
     <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="reveal mb-8 max-w-2xl lg:mb-9">
-            <p class="text-xs uppercase tracking-[.25em] text-[#102840]">Shop by category</p>
+            <x-section-label label="Shop by category" />
             <h2 id="shop-category-title" class="serif mt-4 text-4xl sm:text-2xl">Find your kind of everyday.</h2>
         </div>
 
@@ -306,11 +306,7 @@
 
     <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
-            <p data-services-label class="inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[.3em] text-[#a8842c]">
-                <span class="h-px w-6 bg-[#dcc76a]" aria-hidden="true"></span>
-                What we do
-                <span class="h-px w-6 bg-[#dcc76a]" aria-hidden="true"></span>
-            </p>
+            <x-section-label label="What we do" data-services-label />
             <h2 id="services-title" data-services-heading class="serif mt-4 text-4xl text-[#0b2136] sm:text-2xl">Complete Nivritti &amp; Garment<br class="hidden sm:block"> Manufacturing Solutions</h2>
         </div>
 
@@ -341,7 +337,7 @@
             @endforeach
         </div>
 
-        <div class="mt-10 lg:mt-12">
+        <div class="mt-4 lg:mt-2">
             <div class="flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-left">
                 <p class="max-w-xl text-lg font-medium leading-8 tracking-[-.01em] text-[#0b2136] lg:text-xl">Don't Hesitate, Contact Us For Better Help And Services.</p>
                 <a href="/about" class="services-cta inline-flex shrink-0 items-center gap-3 rounded-full bg-[#e8cf43] px-8 py-4 text-sm font-semibold text-[#0b2136]">
@@ -414,10 +410,10 @@
         ],
     ];
 @endphp
-<section id="collection" data-collection-section class="relative overflow-hidden bg-[#F5F7FC] py-8 md:py-10 lg:py-12" aria-labelledby="collection-title">
+<section id="collection" data-collection-section class="relative overflow-hidden bg-[#F5F7FC]  " aria-labelledby="collection-title">
     <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
-            <p data-collection-label class="inline-flex items-center gap-3 rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#102840]"><span class="h-2 w-2 bg-[#f5df60]" aria-hidden="true"></span> Our collection</p>
+            <x-section-label label="Our collection" data-collection-label />
             <h2 id="collection-title" data-collection-heading class="serif mt-4 text-4xl text-[#102840] sm:text-2xl">Explore Our Premium Collection</h2>
             <p data-collection-text class="mt-5 max-w-2xl text-base leading-8 text-slate-600 lg:text-lg">Discover thoughtfully crafted textiles designed with quality, comfort and modern fashion in mind.</p>
         </div>
@@ -492,7 +488,7 @@ $reviews = [
     <div class="relative mx-auto max-w-7xl px-8">
         <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_260px_minmax(0,1.42fr)] xl:grid-rows-[auto_auto] xl:items-start xl:gap-x-6 xl:gap-y-6">
             <div class="reveal xl:col-span-2 xl:col-start-1 xl:row-start-1">
-                <p class="inline-flex items-center gap-3 rounded-full border border-white/25 px-4 py-2 text-[11px] font-medium uppercase tracking-[.18em] text-white/85"><span class="h-2 w-2 bg-[#f5df60]" aria-hidden="true"></span> Customer testimonials</p>
+                <x-section-label label="Customer testimonials" variant="inverse" />
                 <h2 id="reviews-title" class="serif mt-3 text-2xl sm:text-3xl">Comments Regarding The<br class="hidden sm:block"> Nivritti Industry</h2>
             </div>
 
@@ -547,7 +543,7 @@ $reviews = [
     <div class="reveal mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-5 text-center sm:px-6 lg:flex-row lg:items-center lg:gap-10 lg:px-8 lg:text-left">
         {{-- Left content --}}
         <div class="max-w-3xl">
-            <p class="text-xs uppercase tracking-[.25em] text-black">Let's begin</p>
+            <x-section-label label="Let's begin" />
             <h2 class="serif mt-5 text-4xl leading-tight text-[#0b2136] sm:text-5xl lg:text-6xl">Let's make something meaningful.</h2>
             <p class="mt-6 max-w-xl text-sm leading-7 text-stone-600 lg:text-base">Have an idea, a question or a project in mind? We would love to hear what you are working on.</p>
         </div>

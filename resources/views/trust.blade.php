@@ -393,16 +393,7 @@
 
         <div class="mb-8 lg:mb-10">
 
-            <p
-                class="trust-anim inline-flex items-center gap-3 rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#102840]"
-                data-trust-label
-            >
-
-                <span class="h-2 w-2 rounded-full bg-[#f5df60]"></span>
-
-                Why Global Brands Trust Us
-
-            </p>
+            <x-section-label label="Why Global Brands Trust Us" class="trust-anim" data-trust-label />
 
         </div>
 
@@ -421,7 +412,7 @@
             ================================================== --}}
 
             <div
-                class="trust-anim trust-image-main relative h-[380px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(11,33,54,.35)] lg:h-[460px]"
+                class="trust-anim trust-image-main relative mt-[2px] h-[380px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(11,33,54,.35)] lg:h-[460px]"
                 data-trust-main-image
             >
 

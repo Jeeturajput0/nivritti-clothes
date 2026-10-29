@@ -3,7 +3,7 @@
 @section('content')
 <section class="gallery-replay bg-[#F5F7FC] px-5 pb-12 pt-32 sm:px-6 lg:px-8 lg:pb-16">
     <div class="reveal mx-auto max-w-7xl">
-        <p class="text-xs uppercase tracking-[.25em] text-[#102840]">A closer look</p>
+        <x-section-label label="A closer look" />
         <h1 class="serif mt-5 text-5xl sm:text-7xl">The work, in detail.</h1>
         <p class="mt-5 max-w-xl text-sm leading-7 text-slate-600">Materials, gestures and finished pieces from our world of textiles.</p>
     </div>
