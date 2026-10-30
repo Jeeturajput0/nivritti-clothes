@@ -4,3 +4,6 @@ import './site-animations';
 import './review-slider';
 import './services-animations';
 import './collection-animations';
+import './premium-fashion-animations';
+import './category-slider';
+import './gallery';

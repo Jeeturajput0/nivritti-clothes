@@ -64,7 +64,7 @@ const initIntroAnimation = () => {
         if (words.length) {
             timeline.fromTo(
                 words,
-                { yPercent: 115, opacity: 0, filter: 'blur(8px)' },
+                { yPercent: 75, opacity: 0, filter: 'blur(4px)' },
                 {
                     yPercent: 0,
                     opacity: 1,

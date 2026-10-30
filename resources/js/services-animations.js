@@ -70,17 +70,16 @@ const initServices = () => {
     const words = splitWords(heading);
     const compact = window.matchMedia('(max-width: 639px)').matches;
 
-    gsap.set(label, { opacity: 0, y: 20 });
-    gsap.set(words, { y: 70, opacity: 0, filter: 'blur(8px)' });
-    if (dot) gsap.set(dot, { opacity: 0, scale: 0.6 });
+    gsap.set(label, { opacity: 0, y: 12 });
+    gsap.set(words, { y: 42, opacity: 0, filter: 'blur(4px)' });
+    if (dot) gsap.set(dot, { opacity: 0, scale: 0.9 });
     gsap.set(cards, {
         opacity: 0,
-        x: compact ? 50 : 100,
-        y: 20,
-        scale: 0.96,
-        filter: 'blur(5px)',
+        x: compact ? 18 : 28,
+        y: 12,
+        scale: 0.99,
     });
-    gsap.set(cta, { opacity: 0, y: 24 });
+    gsap.set(cta, { opacity: 0, y: 14 });
 
     const cardsPosition = 0.55;
     const ctaPosition = cardsPosition + cards.length * 0.15 + 0.1;
@@ -94,7 +93,7 @@ const initServices = () => {
         },
     });
 
-    timeline.to(label, { opacity: 1, y: 0, duration: 0.6 }, 0);
+    timeline.to(label, { opacity: 1, y: 0, duration: 0.45 }, 0);
 
     timeline.to(
         words,
@@ -102,8 +101,8 @@ const initServices = () => {
             y: 0,
             opacity: 1,
             filter: 'blur(0px)',
-            duration: 0.9,
-            stagger: 0.06,
+            duration: 0.72,
+            stagger: 0.045,
             ease: 'power4.out',
             onComplete: () => gsap.set(words, { clearProps: 'filter' }),
         },
@@ -119,11 +118,10 @@ const initServices = () => {
             x: 0,
             y: 0,
             scale: 1,
-            filter: 'blur(0px)',
-            duration: 0.9,
-            stagger: 0.15,
+            duration: 0.72,
+            stagger: 0.1,
             ease: 'power3.out',
-            clearProps: 'transform,filter',
+            clearProps: 'transform',
         },
         cardsPosition
     );

@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const CARD_SELECTOR = 'article, .catalog-card, .cart-row, .gallery-item, a.reveal';
+const CARD_SELECTOR = 'article, .catalog-card, .cart-row, a.reveal';
 
 const unique = (items) => [...new Set(items.filter(Boolean))];
 
@@ -157,7 +157,7 @@ const buildSection = (section) => {
     // Cards -----------------------------------------------------------------
     section.querySelectorAll(CARD_SELECTOR).forEach((element) => {
         if (closestCard(element)) return;
-        if (element.matches('article') || element.matches('.catalog-card, .cart-row, .gallery-item')) {
+        if (element.matches('article') || element.matches('.catalog-card, .cart-row')) {
             cards.push(element);
         } else if (element.matches('a.reveal') && element.querySelector('img')) {
             cards.push(element);
@@ -171,10 +171,10 @@ const buildSection = (section) => {
     section.querySelectorAll('.serif').forEach((numberElement) => {
         const text = numberElement.textContent.trim();
         if (!/^[\d,]+(?:\.\d+)?\s*[+%KkMm]?$/.test(text)) return;
-        if (numberElement.closest('form, .catalog-card, .gallery-item, .cart-row, article')) return;
+        if (numberElement.closest('form, .catalog-card, .cart-row, article')) return;
 
         const block = numberElement.parentElement;
-        if (!block || block.closest('form, .catalog-card, .gallery-item, .cart-row, article')) return;
+        if (!block || block.closest('form, .catalog-card, .cart-row, article')) return;
         if (statBlocks.includes(block)) return;
 
         statBlocks.push({ block, numberElement });
@@ -185,7 +185,7 @@ const buildSection = (section) => {
 
     // Headings --------------------------------------------------------------
     section.querySelectorAll('h1, h2').forEach((heading) => {
-        if (heading.closest('article, .catalog-card, .cart-row, .gallery-item, form')) return;
+        if (heading.closest('article, .catalog-card, .cart-row, form')) return;
         if (insideStat(heading) || insideReviewSlider(heading)) return;
         headings.push(heading);
     });
@@ -308,14 +308,13 @@ const buildSection = (section) => {
     const mediaPosition = lead ? 0.15 : 0.05;
     const softPosition = mediaPosition + 0.2;
     const ctaPosition = lead ? 0.8 : 0.25;
-    const replayOnScroll = section.classList.contains('gallery-replay') || Boolean(section.querySelector('.gallery-item'));
 
     const timeline = gsap.timeline({
         defaults: { ease: 'power3.out' },
         scrollTrigger: {
             trigger: section,
             start: 'top 75%',
-            once: !replayOnScroll,
+            once: true,
         },
     });
 
@@ -341,12 +340,12 @@ const buildSection = (section) => {
     simpleBlocks.forEach((block, index) => {
         timeline.fromTo(
             block,
-            { opacity: 0, y: move(30, 24), filter: 'blur(5px)' },
+            { opacity: 0, y: move(22, 18), filter: 'blur(3px)' },
             {
                 opacity: 1,
                 y: 0,
                 filter: 'blur(0px)',
-                duration: 0.9,
+                duration: 0.72,
                 onComplete: () => gsap.set(block, { clearProps: 'filter' }),
             },
             0.15 + index * 0.08
@@ -368,17 +367,17 @@ const buildSection = (section) => {
 
         if (!words.length) return;
 
-        gsap.set(words, { yPercent: 110, opacity: 0, filter: 'blur(8px)' });
+        gsap.set(words, { yPercent: 75, opacity: 0, filter: 'blur(4px)' });
 
         timeline.fromTo(
             words,
-            { yPercent: 110, opacity: 0, filter: 'blur(8px)' },
+            { yPercent: 75, opacity: 0, filter: 'blur(4px)' },
             {
                 yPercent: 0,
                 opacity: 1,
                 filter: 'blur(0px)',
-                duration: 1,
-                stagger: 0.06,
+                duration: 0.78,
+                stagger: 0.045,
                 onComplete: () => gsap.set(words, { clearProps: 'filter' }),
             },
             headingPosition + index * 0.08
@@ -507,68 +506,10 @@ const buildSection = (section) => {
     });
 
     cards.forEach((card, index) => {
-        const isGallery = card.classList.contains('gallery-item');
         const isCatalog = card.classList.contains('catalog-card');
         const isCartRow = card.classList.contains('cart-row');
         const isReview = Boolean(card.querySelector('blockquote'));
         const position = cardPosition + index * 0.1;
-
-        if (isGallery) {
-            // Gallery images animate one by one and replay every time they
-            // scroll into view from either direction, so the motion also
-            // shows while scrolling back up.
-            // Even items slide LEFT ➜ RIGHT, odd items slide RIGHT ➜ LEFT.
-            const slideFromLeft = index % 2 === 0;
-            const innerImage = card.querySelector('img');
-
-            gsap.set(card, { opacity: 0 });
-
-            const galleryTimeline = gsap.timeline({
-                scrollTrigger: {
-                    trigger: card,
-                    start: 'top 88%',
-                    toggleActions: 'restart none none restart',
-                },
-            });
-
-            galleryTimeline.fromTo(
-                card,
-                {
-                    opacity: 0,
-                    x: slideFromLeft ? -120 : 120,
-                    scale: 0.95,
-                    filter: 'blur(8px)',
-                },
-                {
-                    opacity: 1,
-                    x: 0,
-                    scale: 1,
-                    filter: 'blur(0px)',
-                    duration: 1.7,
-                    ease: 'power2.out',
-                    onComplete: () => {
-                        gsap.set(card, { clearProps: 'transform,filter' });
-                        card.classList.add('is-revealed');
-                    },
-                }
-            );
-
-            if (innerImage) {
-                galleryTimeline.fromTo(
-                    innerImage,
-                    { scale: 1.1 },
-                    {
-                        scale: 1,
-                        duration: 2,
-                        ease: 'power2.out',
-                        onComplete: () => gsap.set(innerImage, { clearProps: 'transform' }),
-                    },
-                    0
-                );
-            }
-
-            return;
-        }
 
         timeline.fromTo(
             card,
@@ -664,6 +605,8 @@ const init = () => {
         .filter(
             (element) =>
                 element.tagName === 'SECTION' &&
+                !element.hasAttribute('data-premium-hero') &&
+                !element.hasAttribute('data-gallery-section') &&
                 element.id !== 'about-intro' &&
                 element.id !== 'services' &&
                 element.id !== 'collection'

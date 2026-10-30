@@ -24,18 +24,18 @@ const initCollection = () => {
     }
 
     const compact = window.matchMedia('(max-width: 639px)').matches;
-    const slide = compact ? 32 : 70;
+    const slide = compact ? 18 : 32;
 
     // Collection header ------------------------------------------------------
     if (copy.length) {
-        gsap.set(copy, { opacity: 0, y: 50 });
+        gsap.set(copy, { opacity: 0, y: 24 });
 
         gsap.to(copy, {
             opacity: 1,
             y: 0,
-            duration: 0.9,
+            duration: 0.72,
             ease: 'power3.out',
-            stagger: 0.12,
+            stagger: 0.09,
             scrollTrigger: {
                 trigger: section,
                 start: 'top 78%',
@@ -49,7 +49,7 @@ const initCollection = () => {
     // only. A 0.12s stagger gives the grid a soft cascading entrance.
     gsap.set(cards, {
         opacity: 0,
-        y: 70,
+        y: compact ? 28 : 38,
         x: (index) => (index % 2 === 0 ? slide : 0),
     });
 
@@ -57,9 +57,9 @@ const initCollection = () => {
         opacity: 1,
         x: 0,
         y: 0,
-        duration: compact ? 0.8 : 1,
+        duration: compact ? 0.72 : 0.84,
         ease: 'power3.out',
-        stagger: 0.12,
+        stagger: 0.09,
         scrollTrigger: {
             trigger: grid,
             start: 'top 82%',

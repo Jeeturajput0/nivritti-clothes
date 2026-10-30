@@ -12,7 +12,7 @@
                 <img
                     src="{{ asset('images/logo/logo.png') }}"
                     alt="Nivritti"
-                    class="h-10 w-auto object-contain"
+                    class="h-12 w-auto object-contain"
                 >
             </a>
 
@@ -85,6 +85,8 @@
                     id="menu-btn"
                     class="flex h-10 w-10 items-center justify-center rounded-full text-ink transition hover:bg-sand-deep hover:text-brass-deep md:hidden"
                     aria-label="Open menu"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
                 >
                     <svg
                         id="menu-icon"
@@ -148,32 +150,3 @@
         </div>
     </div>
 </nav>
-
-{{-- Navbar Animation --}}
-<script>
-    const navbar = document.getElementById('navbar');
-    const navContainer = document.getElementById('nav-container');
-
-    if (navbar && navContainer) {
-        window.addEventListener('scroll', () => {
-            const isScrolled = window.scrollY > 40;
-
-            navContainer.classList.toggle('mt-4', !isScrolled);
-            navContainer.classList.toggle('bg-ivory/90', !isScrolled);
-            navContainer.classList.toggle('shadow-ink/5', !isScrolled);
-
-            navContainer.classList.toggle('mt-2', isScrolled);
-            navContainer.classList.toggle('bg-ivory', isScrolled);
-            navContainer.classList.toggle('shadow-xl', isScrolled);
-        });
-    }
-
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
-</script>

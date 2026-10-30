@@ -11,10 +11,10 @@
     #trust-section {
         overflow: hidden;
         background: var(--color-sand);
-        margin-top: 12px;
-        margin-bottom: 12px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 
     /* -------------------------
@@ -257,10 +257,10 @@
     ------------------------- */
 
     #trust-section .trust-stat-card {
-        background: rgba(250, 247, 241, .72);
+        background: rgba(248, 245, 239, .72);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(250, 247, 241, .85);
+        border: 1px solid rgba(248, 245, 239, .85);
         box-shadow: 0 18px 40px -22px rgba(27, 25, 21, .22);
     }
 
@@ -311,8 +311,8 @@
     @media (max-width: 640px) {
 
         #trust-section {
-            padding-top: 80px;
-            padding-bottom: 80px;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
 
         #trust-section .trust-heading-word {
@@ -381,7 +381,7 @@
 
 <section
     id="trust-section"
-    class="my-3 bg-sand py-20 px-5 sm:px-6 lg:px-8"
+    class="bg-sand px-5 py-8 sm:px-6 md:py-10 lg:px-8 lg:py-12"
 >
 
     <div class="mx-auto max-w-7xl">
@@ -461,7 +461,7 @@
                 >
 
                     <p
-                        class="text-4xl font-bold tracking-tight text-ink sm:text-5xl"
+                        class="text-4xl font-bold tracking-tight text-ink sm:text-2xl"
                     >
                         350k+
                     </p>
@@ -494,7 +494,7 @@
                 >
 
                     <h2
-                        class="trust-heading max-w-5xl text-4xl font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[56px]"
+                        class="trust-heading max-w-5xl text-2xl font-bold leading-[1.08] tracking-tight text-ink"
                     >
 
                         <span class="trust-heading-line">
