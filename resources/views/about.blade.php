@@ -42,7 +42,7 @@
         </div>
     </div>
 </section>
-<section class="bg-ink px-5 py-8 text-ivory sm:px-6 lg:px-8 lg:py-12">
+<!-- <section class="bg-ink px-5 py-8 text-ivory sm:px-6 lg:px-8 lg:py-12">
     <div class="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:px-4">
         <div class="reveal">
             <x-section-label label="Our mission" variant="inverse" />
@@ -55,7 +55,7 @@
             <p class="mt-5 max-w-lg text-base leading-8 text-ivory/75">We believe a better future for textiles is built through lasting relationships, informed choices and a commitment to keep learning.</p>
         </div>
     </div>
-</section>
+</section> -->
 <section class="bg-ivory px-5 py-8 sm:px-6 lg:px-8 lg:py-12">
     <div class="mx-auto max-w-7xl">
         <div class="reveal max-w-3xl">
