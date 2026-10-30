@@ -1,26 +1,26 @@
 <nav
     id="navbar"
-    class="fixed left-0 top-0 z-50 w-full transition-all duration-500"
+    class="site-navbar fixed left-0 top-0 z-50 w-full transition-all duration-500"
 >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
             id="nav-container"
-            class="mt-4 flex h-16 items-center justify-between rounded-full border border-ink/10 bg-ivory/90 px-5 shadow-lg shadow-ink/5 backdrop-blur-xl transition-all duration-500 lg:px-7"
+            class="mt-0 flex h-[76px] items-center justify-between border-b border-brass/40 px-5 shadow-none transition-all duration-500 lg:px-7"
         >
             {{-- Logo --}}
             <a href="/" class="flex items-center">
                 <img
                     src="{{ asset('images/logo/logo.png') }}"
                     alt="Nivritti"
-                    class="h-12 w-auto object-contain"
+                    class="h-11 w-auto object-contain sm:h-[52px]"
                 >
             </a>
 
             {{-- Desktop Menu --}}
-            <div class="hidden items-center gap-8 md:flex">
+            <div class="hidden items-center gap-7 md:flex lg:gap-9">
                 <a
                     href="/"
-                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
                 >
                     Home
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -28,7 +28,7 @@
 
                 <a
                     href="/about"
-                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
                 >
                     About
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -36,7 +36,7 @@
 
                 <a
                     href="/gallery"
-                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
                 >
                     Gallery
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -44,7 +44,7 @@
 
                 <a
                     href="/catalog"
-                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
                 >
                     Collection
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -52,7 +52,7 @@
 
                 <a
                     href="/contact"
-                    class="nav-link group relative text-sm font-medium text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
                 >
                     Contact
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -63,7 +63,7 @@
             <div class="flex items-center gap-2">
                 {{-- Search --}}
                 <button
-                    class="hidden h-10 w-10 items-center justify-center rounded-full text-ink transition duration-300 hover:bg-sand-deep hover:text-brass-deep sm:flex"
+                    class="hidden h-10 w-10 items-center justify-center rounded-full text-ivory transition duration-300 hover:bg-white/10 hover:text-brass sm:flex"
                     aria-label="Search"
                 >
                     <svg
@@ -83,7 +83,7 @@
                 {{-- Mobile Menu Button --}}
                 <button
                     id="menu-btn"
-                    class="flex h-10 w-10 items-center justify-center rounded-full text-ink transition hover:bg-sand-deep hover:text-brass-deep md:hidden"
+                    class="flex h-10 w-10 items-center justify-center rounded-full text-ivory transition hover:bg-white/10 hover:text-brass md:hidden"
                     aria-label="Open menu"
                     aria-controls="mobile-menu"
                     aria-expanded="false"
@@ -109,40 +109,40 @@
         {{-- Mobile Menu --}}
         <div
             id="mobile-menu"
-            class="mt-2 hidden overflow-hidden rounded-3xl border border-ink/10 bg-ivory/95 p-4 shadow-xl backdrop-blur-xl md:hidden"
+            class="mt-2 hidden overflow-hidden border border-brass/30 bg-wine p-4 shadow-xl md:hidden"
         >
             <div class="flex flex-col gap-1">
                 <a
                     href="/"
-                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
+                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
                 >
                     Home
                 </a>
 
                 <a
                     href="/about"
-                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
+                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
                 >
                     About
                 </a>
 
                 <a
                     href="/gallery"
-                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
+                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
                 >
                     Gallery
                 </a>
 
                 <a
                     href="/catalog"
-                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
+                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
                 >
                     Collection
                 </a>
 
                 <a
                     href="/contact"
-                    class="rounded-2xl px-4 py-3 text-sm text-ink transition hover:bg-sand-deep hover:text-brass-deep"
+                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
                 >
                     Contact
                 </a>

@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#efe8dc">
+    <meta name="theme-color" content="#071A2F">
     <title>@yield('title', 'Nivritti | Thoughtful textiles')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         html { scroll-behavior: smooth; }
-        html, body { background: var(--color-sand); color: var(--color-ink); }
-        main, main section { background-color: var(--color-sand); }
+        html, body { background: var(--ivory); color: var(--text); }
+        main { background-color: var(--ivory); }
         select, option { background-color: var(--color-ivory); color: var(--color-ink); }
         .serif { font-family: var(--font-serif); }
         .js .reveal { opacity: 0; }
@@ -59,8 +59,8 @@
         .footer-cta:hover .anim-cta-arrow { transform: translate(3px, -3px); }
         .review-slide { grid-area: 1 / 1; }
         .review-slide + .review-slide { visibility: hidden; opacity: 0; }
-        .review-dot { width: 8px; height: 8px; border-radius: 9999px; background: rgba(27,25,21,.24); transition: background-color .3s ease, transform .3s ease; }
-        .review-dot:hover { background: rgba(27,25,21,.52); }
+        .review-dot { width: 8px; height: 8px; border-radius: 9999px; background: rgba(248,245,237,.35); transition: background-color .3s ease, transform .3s ease; }
+        .review-dot:hover { background: rgba(248,245,237,.72); }
         .review-dot.is-active { background: var(--color-brass); transform: scale(1.15); }
         .review-dot:focus-visible { outline: 2px solid var(--color-brass); outline-offset: 4px; }
         .service-card { transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s cubic-bezier(.2,.7,.2,1), border-color .4s ease; }

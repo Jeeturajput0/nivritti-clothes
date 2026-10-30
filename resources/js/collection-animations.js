@@ -5,10 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const isReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const initCollection = () => {
-    const section = document.querySelector('[data-collection-section]');
-    if (!section) return;
-
+const initCollection = (section) => {
     const label = section.querySelector('[data-collection-label]');
     const heading = section.querySelector('[data-collection-heading]');
     const text = section.querySelector('[data-collection-text]');
@@ -70,7 +67,7 @@ const initCollection = () => {
 
 const init = () => {
     try {
-        initCollection();
+        document.querySelectorAll('[data-collection-section]').forEach(initCollection);
     } catch (error) {
         document.documentElement.classList.add('anim-failed');
     }

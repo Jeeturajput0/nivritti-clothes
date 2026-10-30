@@ -4,10 +4,17 @@
 <section class="bg-sand px-5 pb-8 pt-28 sm:px-6 lg:px-8 lg:pb-10">
     <div class="reveal mx-auto max-w-7xl"><x-section-label label="The collection" />
         <h1 class="serif mt-5 text-5xl text-ink sm:text-2xl">Explore our collection.</h1>
-        <p class="mt-5 max-w-xl text-sm leading-7 text-muted">Pieces shaped by material, movement and the everyday rituals they become part of.</p>
+        <p class="mt-5 max-w-xl text-sm leading-7 text-muted">Pieces shaped by material, movement and the everyday rituals they become part of. Browse clothing, textiles and accessories, then find the details that feel right for your collection.</p>
+        <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-ink/10 pt-4 text-[10px] font-semibold uppercase tracking-[.18em] text-muted">
+            <span>Clothing</span>
+            <span>Textiles</span>
+            <span>Accessories</span>
+            <span>Made for everyday</span>
+        </div>
     </div>
 </section>
 <section class="bg-ivory mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8 lg:py-10">
+    <p class="mb-5 max-w-2xl text-sm leading-7 text-muted">Use the category filters to explore the range, search for a particular piece, or sort the collection by name.</p>
     <div class="flex flex-col gap-5 border-b border-ink/15 pb-5 md:flex-row md:items-center md:justify-between">
         <div class="flex flex-wrap gap-2">@foreach(['All pieces','Clothing','Textiles','Accessories'] as $category)<button type="button" class="catalog-category rounded-full border border-ink/20 px-4 py-2 text-xs text-ink transition hover:border-brass hover:bg-brass hover:text-ink" data-category="{{ strtolower($category === 'All pieces' ? 'all' : $category) }}">{{ $category }}</button>@endforeach</div>
         <div class="flex flex-wrap gap-3"><label class="flex items-center gap-2 rounded-full border border-ink/15 bg-ivory px-3"><span class="sr-only">Search collection</span><svg class="h-4 w-4 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">

@@ -10,14 +10,19 @@
         </div>
 
         <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-12">
-            <h1 data-gallery-header-item class="serif max-w-3xl text-[2.75rem] uppercase leading-[.95] tracking-tight text-ink sm:text-2xl lg:text-7xl">
+            <h1 data-gallery-header-item class="serif max-w-3xl  uppercase leading-[.95] tracking-tight text-ink sm:text-2xl lg:text-5xl">
                 The Nivritti<br class="hidden sm:block">
                 <em class="font-normal not-italic text-brass-deep">Edit</em>
             </h1>
 
-            <p data-gallery-header-item class="max-w-sm text-sm leading-7 text-muted lg:pb-2">
-                A visual expression of heritage, craftsmanship and contemporary Indian elegance.
-            </p>
+            <div data-gallery-header-item class="max-w-sm lg:pb-2">
+                <p class="text-sm leading-7 text-muted">
+                    A visual expression of heritage, craftsmanship and contemporary Indian elegance.
+                </p>
+                <p class="mt-3 text-sm leading-7 text-muted">
+                    Explore the textures, people and process behind every Nivritti story—from fabric studies to moments on the workshop floor.
+                </p>
+            </div>
         </div>
 
         <div class="mt-9 h-px w-full bg-ink/10">

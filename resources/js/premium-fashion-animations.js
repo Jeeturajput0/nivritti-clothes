@@ -178,10 +178,10 @@ const initNavbar = () => {
         const updateScrolledState = () => {
             const isScrolled = window.scrollY > 40;
             navContainer.classList.toggle('mt-4', !isScrolled);
-            navContainer.classList.toggle('bg-ivory/90', !isScrolled);
+            navContainer.classList.toggle('bg-wine/90', !isScrolled);
             navContainer.classList.toggle('shadow-ink/5', !isScrolled);
             navContainer.classList.toggle('mt-2', isScrolled);
-            navContainer.classList.toggle('bg-ivory', isScrolled);
+            navContainer.classList.toggle('bg-wine', isScrolled);
             navContainer.classList.toggle('shadow-xl', isScrolled);
         };
 

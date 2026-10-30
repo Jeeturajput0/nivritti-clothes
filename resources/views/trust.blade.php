@@ -161,7 +161,7 @@
         overflow: hidden;
         border-radius: 999px;
         background: var(--color-ivory);
-        box-shadow: inset 0 1px 3px rgba(27, 25, 21, .08);
+        box-shadow: inset 0 1px 3px rgba(16, 40, 64, .08);
     }
 
     #trust-section .trust-progress-fill {
@@ -257,11 +257,11 @@
     ------------------------- */
 
     #trust-section .trust-stat-card {
-        background: rgba(248, 245, 239, .72);
+        background: rgba(255, 255, 255, .72);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(248, 245, 239, .85);
-        box-shadow: 0 18px 40px -22px rgba(27, 25, 21, .22);
+        border: 1px solid rgba(255, 255, 255, .85);
+        box-shadow: 0 18px 40px -22px rgba(16, 40, 64, .22);
     }
 
     /* -------------------------
@@ -381,7 +381,7 @@
 
 <section
     id="trust-section"
-    class="bg-sand px-5 py-8 sm:px-6 md:py-10 lg:px-8 lg:py-12"
+    class="mx-0 bg-sand px-5 py-8 sm:px-6 md:mx-12 md:py-10 lg:mx-[120px] lg:px-8 lg:py-12"
 >
 
     <div class="mx-auto max-w-7xl">
