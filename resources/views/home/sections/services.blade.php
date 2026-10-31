@@ -40,7 +40,7 @@ $services = [
 
         <div class="mt-5 grid gap-5 sm:grid-cols-2 xl:grid-cols-4 lg:mt-8 lg:gap-6">
             @foreach($services as $service)
-            <article data-service-card class="service-card flex h-full flex-col border border-brass/30 bg-white/70 p-6 sm:p-7">
+            <article data-service-card class="service-card flex h-full flex-col border border-brass/30 bg-[#FFFEF9] p-6 sm:p-7">
                 <span class="service-icon flex h-14 w-14 items-center justify-center rounded-full bg-brass text-ink" aria-hidden="true">
                     @switch($service['icon'])
                     @case('layers')
@@ -81,7 +81,7 @@ $services = [
         <div class="mt-6 md:mt-8">
             <div class="flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-left">
                 <p class="max-w-xl text-lg font-medium leading-8 tracking-[-.01em] text-ink lg:text-xl">Don't Hesitate, Contact Us For Better Help And Services.</p>
-                <a href="/about" class="services-cta inline-flex shrink-0 items-center gap-3 rounded-sm bg-ink px-8 py-4 text-sm font-semibold text-ivory">
+                <a href="/about" class="services-cta inline-flex shrink-0 items-center gap-3 rounded-sm bg-brass px-8 py-4 text-sm font-semibold text-ink">
                     See All Services
                     <span class="services-cta-arrow" aria-hidden="true">→</span>
                 </a>

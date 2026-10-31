@@ -76,7 +76,7 @@
 
 <section
     id="about-intro"
-    class="relative overflow-hidden rounded-[2rem] bg-sand py-8 md:py-10">
+    class="relative overflow-hidden rounded-[2rem] bg-transparent py-8 md:py-10">
     <span
         data-stitch-divider
         class="stitch-divider"
@@ -85,7 +85,7 @@
     <div
         class="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-ink/10 bg-sand px-4 py-5 shadow-[0_18px_45px_-30px_rgba(27,25,21,0.28)] sm:px-6 sm:py-6 lg:px-8 lg:py-8">
 
-        <div class="grid gap-8 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:gap-12">
+        <div class="grid gap-8 lg:grid-cols-[1.02fr_.98fr] lg:items-center lg:gap-12">
 
             {{-- Editorial copy --}}
             <div class="relative z-10 order-2 w-full lg:order-1">
@@ -261,7 +261,7 @@
 
                 <div
                     data-intro-image
-                    class="story-image image-zoom relative h-[420px] overflow-hidden rounded-[2rem] border border-brass/30 bg-sand shadow-[0_20px_45px_-30px_rgba(7,26,47,0.22)] sm:h-[500px] lg:h-[540px]">
+                    class="story-image image-zoom relative h-[380px] overflow-hidden rounded-[2rem] bg-sand sm:h-[500px] lg:h-[560px]">
 
                     <img
                         src="{{ asset('images/about/about-hero.jpg') }}"

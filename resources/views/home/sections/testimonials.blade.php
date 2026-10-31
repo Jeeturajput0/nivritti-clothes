@@ -21,13 +21,13 @@ $reviews = [
 ],
 ];
 @endphp
-<section id="reviews" class="relative mx-0 scroll-mt-24 bg-ink px-5 py-8 sm:px-6 sm:py-10 md:mx-12 lg:mx-[120px] lg:px-8 lg:py-12" aria-labelledby="reviews-title">
+<section id="reviews" class="relative mx-0 scroll-mt-24 bg-sand px-5 py-8 sm:px-6 sm:py-10 md:mx-12 lg:mx-[120px] lg:px-8 lg:py-12" aria-labelledby="reviews-title">
     <span data-stitch-divider class="stitch-divider" aria-hidden="true"></span>
     <div class="mx-auto max-w-7xl">
         <div class="reveal mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between lg:mb-10">
             <div>
-                <x-section-label label="Customer testimonials" variant="inverse" />
-                <h2 id="reviews-title" class="serif mt-4 max-w-2xl text-2xl leading-tight text-ivory">Good work is remembered.</h2>
+                <x-section-label label="Customer testimonials" />
+                <h2 id="reviews-title" class="serif mt-4 max-w-2xl text-2xl leading-tight text-ink">Good work is remembered.</h2>
             </div>
         </div>
 
@@ -39,13 +39,13 @@ $reviews = [
                     <p class="text-[9px] font-semibold uppercase tracking-[.22em] text-brass-light">Thoughtful textiles</p>
                     <p class="serif mt-2 max-w-sm text-2xl leading-snug text-ivory sm:text-3xl">Made with care, built on trust.</p>
                 </div>
-                <div class="absolute bottom-5 right-5 h-24 w-20 overflow-hidden rounded-xl border-2 border-ivory bg-sand shadow-[0_12px_30px_-12px_rgba(27,25,21,.55)] sm:bottom-7 sm:right-7 sm:h-36 sm:w-28" aria-hidden="true">
+                <div class="absolute bottom-5 right-5 h-24 w-20 overflow-hidden rounded-xl border-2 border-ivory bg-sand shadow-[0_12px_30px_-12px_rgba(7,26,46,.55)] sm:bottom-7 sm:right-7 sm:h-36 sm:w-28" aria-hidden="true">
                     <img src="{{ asset('images/process/choose-2.jpg') }}" alt="" class="h-full w-full object-cover" loading="lazy">
                     <span class="absolute inset-x-0 bottom-0 bg-ink/65 px-1.5 py-1 text-center text-[7px] font-medium uppercase tracking-[.12em] text-ivory sm:text-[8px]">In the making</span>
                 </div>
             </div>
 
-            <div class="review-slider relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-[1.75rem] border border-ink/10 bg-sand p-6 sm:min-h-[380px] sm:p-9 lg:min-h-[440px] lg:p-12" data-review-slider>
+            <div class="review-slider relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-[1.75rem] border border-ink/10 bg-[#FFFEF9] p-6 sm:min-h-[380px] sm:p-9 lg:min-h-[440px] lg:p-12" data-review-slider>
                 <div class="pointer-events-none absolute -bottom-20 -right-16 h-56 w-56 rounded-full border border-brass/20" aria-hidden="true"></div>
                 <div class="pointer-events-none absolute -bottom-10 -right-6 h-36 w-36 rounded-full border border-brass/20" aria-hidden="true"></div>
                 <div class="relative">

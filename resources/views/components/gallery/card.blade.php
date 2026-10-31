@@ -18,7 +18,7 @@
     data-src="{{ asset($item['image']) }}"
     data-title="{{ $item['title'] }}"
     aria-label="View {{ $item['title'] }} — {{ $item['category'] }}"
-    class="gallery-card group relative isolate w-full {{ $size }} overflow-hidden rounded-xl bg-sand text-left shadow-[0_30px_60px_-45px_rgba(27,25,21,.45)] transition-shadow duration-500 hover:shadow-[0_35px_70px_-40px_rgba(27,25,21,.55)] focus-visible:outline-none"
+    class="gallery-card group relative isolate w-full {{ $size }} overflow-hidden rounded-xl bg-sand text-left shadow-[0_30px_60px_-45px_rgba(7,26,46,.45)] transition-shadow duration-500 hover:shadow-[0_35px_70px_-40px_rgba(7,26,46,.55)] focus-visible:outline-none"
 >
     <img
         src="{{ asset($item['image']) }}"

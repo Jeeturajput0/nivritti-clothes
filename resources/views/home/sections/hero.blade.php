@@ -1,5 +1,5 @@
 {{-- Hero --}}
-<section id="home-hero" data-premium-hero class="relative flex min-h-[680px] items-end overflow-hidden bg-black/80 pt-28 sm:min-h-[680px]" role="region" aria-roledescription="carousel" aria-label="Nivritti textile stories">
+<section id="home-hero" data-premium-hero class="relative flex min-h-[680px] items-end overflow-hidden bg-ink/80 pt-28 sm:min-h-[680px]" role="region" aria-roledescription="carousel" aria-label="Nivritti textile stories">
     <div data-hero-media class="absolute inset-0">
         <img data-hero-slide src="{{ asset('images/hero/images (1).jpeg') }}" alt="Two Nivritti workers in orange headscarves at their machines" class="absolute inset-0 h-full w-full object-cover object-center opacity-100 transition-opacity duration-1000">
         <img data-hero-slide src="{{ asset('images/hero/images.jpeg') }}" alt="A long row of sewing stations inside the Nivritti workshop" class="absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-1000" aria-hidden="true">
@@ -20,7 +20,7 @@
         <h1 class="reveal serif max-w-4xl text-5xl font-normal leading-[.98] tracking-tight sm:text-6xl lg:text-8xl">Made of craft.<br><em class="font-normal">Made for tomorrow.</em></h1>
         <div class="mt-8 flex flex-col gap-7 sm:flex-row sm:items-end sm:justify-between">
             <p class="reveal max-w-lg text-sm leading-7 text-ivory/85 sm:text-base">We bring thoughtful design, responsible making and the quiet beauty of textiles together.</p>
-            <div class="reveal flex flex-wrap gap-3"><a href="/catalog" class="inline-flex items-center gap-4 rounded-full bg-brass px-6 py-4 text-sm font-semibold text-white transition hover:bg-brass-soft">Explore the collection <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a><a href="/about" class="inline-flex items-center rounded-full border border-ivory/50 px-6 py-4 text-sm text-ivory transition hover:border-brass hover:bg-ivory/10">Our approach</a></div>
+            <div class="reveal flex flex-wrap gap-3"><a href="/catalog" class="inline-flex items-center gap-4 rounded-full bg-brass px-6 py-4 text-sm font-semibold text-ink transition hover:bg-brass-deep">Explore the collection <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a><a href="/about" class="inline-flex items-center rounded-full border border-ivory/50 px-6 py-4 text-sm text-ivory transition hover:border-brass hover:bg-ivory/10">Our approach</a></div>
         </div>
         <div class="mt-10 flex flex-wrap items-center justify-between gap-6 sm:mt-14">
             <div data-hero-scroll class="flex items-center gap-3 text-[10px] uppercase tracking-[.24em] text-ivory/70"><span class="h-px w-12 bg-ivory/60"></span> Scroll to discover</div>

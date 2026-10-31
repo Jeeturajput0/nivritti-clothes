@@ -1,5 +1,5 @@
 {{-- Highlights --}}
-<section class="relative mx-0 border-t border-b border-ink/10 rounded-t-2xl bg-sand md:mx-12 md:py-8 lg:mx-[120px]">
+<section class="relative mx-0 border-t border-b border-ink/10 rounded-t-2xl mt-2 bg-[#ffe28c70] md:mx-12 md:py-8 lg:mx-[120px]">
     <span data-stitch-divider class="stitch-divider" aria-hidden="true"></span>
 
     <div class="mx-auto grid max-w-7xl grid-cols-2 gap-y-10 px-5 sm:px-6 md:grid-cols-4 lg:px-8">

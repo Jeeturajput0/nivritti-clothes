@@ -261,7 +261,7 @@
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, .85);
-        box-shadow: 0 18px 40px -22px rgba(16, 40, 64, .22);
+        box-shadow: 0 18px 40px -22px rgba(7, 26, 46, .22);
     }
 
     /* -------------------------
@@ -412,7 +412,7 @@
             ================================================== --}}
 
             <div
-                class="trust-anim trust-image-main relative mt-[2px] h-[380px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(27,25,21,.30)] lg:h-[460px]"
+                class="trust-anim trust-image-main relative mt-[2px] h-[380px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(7,26,46,.30)] lg:h-[460px]"
                 data-trust-main-image
             >
 
@@ -451,7 +451,7 @@
 
                 {{-- Floating yellow dot --}}
                 <span
-                    class="trust-dot absolute right-8 top-24 h-10 w-10 rounded-full bg-brass/80 shadow-[0_0_0_6px_rgba(176,131,47,.25)]"
+                    class="trust-dot absolute right-8 top-24 h-10 w-10 rounded-full bg-brass/80 shadow-[0_0_0_6px_rgba(212,166,42,.25)]"
                 ></span>
 
 
@@ -544,7 +544,7 @@
 
                     {{-- SECOND IMAGE — slides LEFT ➜ RIGHT (delayed) --}}
                     <!-- <div
-                        class="trust-anim trust-image-second h-[300px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(27,25,21,.30)]"
+                        class="trust-anim trust-image-second h-[300px] overflow-hidden rounded-[22px] shadow-[0_30px_60px_-30px_rgba(7,26,46,.30)]"
                         data-trust-second-image
                     >
 

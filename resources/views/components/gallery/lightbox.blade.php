@@ -36,7 +36,7 @@
                     data-gallery-lightbox-image
                     src=""
                     alt=""
-                    class="max-h-[64vh] w-auto max-w-full rounded-lg object-contain shadow-[0_40px_80px_-40px_rgba(0,0,0,.8)] sm:max-h-[70vh]"
+                    class="max-h-[64vh] w-auto max-w-full rounded-lg object-contain shadow-[0_40px_80px_-40px_rgba(7,26,46,.8)] sm:max-h-[70vh]"
                 >
                 <figcaption class="mt-5 text-center">
                     <p data-gallery-lightbox-title class="serif text-xl leading-snug text-ivory sm:text-2xl"></p>

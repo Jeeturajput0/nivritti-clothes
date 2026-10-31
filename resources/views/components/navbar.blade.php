@@ -20,7 +20,7 @@
             <div class="hidden items-center gap-7 md:flex lg:gap-9">
                 <a
                     href="/"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Home
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -28,7 +28,7 @@
 
                 <a
                     href="/about"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
                 >
                     About
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -36,7 +36,7 @@
 
                 <a
                     href="/gallery"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Gallery
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -44,7 +44,7 @@
 
                 <a
                     href="/catalog"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Collection
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -52,7 +52,7 @@
 
                 <a
                     href="/contact"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ivory transition duration-300 hover:text-brass"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
                 >
                     Contact
                     <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
@@ -63,7 +63,7 @@
             <div class="flex items-center gap-2">
                 {{-- Search --}}
                 <button
-                    class="hidden h-10 w-10 items-center justify-center rounded-full text-ivory transition duration-300 hover:bg-white/10 hover:text-brass sm:flex"
+                    class="hidden h-10 w-10 items-center justify-center rounded-full text-ink transition duration-300 hover:bg-ink/5 hover:text-brass-deep sm:flex"
                     aria-label="Search"
                 >
                     <svg
@@ -83,7 +83,7 @@
                 {{-- Mobile Menu Button --}}
                 <button
                     id="menu-btn"
-                    class="flex h-10 w-10 items-center justify-center rounded-full text-ivory transition hover:bg-white/10 hover:text-brass md:hidden"
+                    class="flex h-10 w-10 items-center justify-center rounded-full text-ink transition hover:bg-ink/5 hover:text-brass-deep md:hidden"
                     aria-label="Open menu"
                     aria-controls="mobile-menu"
                     aria-expanded="false"
@@ -109,40 +109,40 @@
         {{-- Mobile Menu --}}
         <div
             id="mobile-menu"
-            class="mt-2 hidden overflow-hidden border border-brass/30 bg-wine p-4 shadow-xl md:hidden"
+            class="mt-2 hidden overflow-hidden border border-brass/30 bg-ivory p-4 shadow-xl md:hidden"
         >
             <div class="flex flex-col gap-1">
                 <a
                     href="/"
-                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
+                    class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
                 >
                     Home
                 </a>
 
                 <a
                     href="/about"
-                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
+                    class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
                 >
                     About
                 </a>
 
                 <a
                     href="/gallery"
-                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
+                    class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
                 >
                     Gallery
                 </a>
 
                 <a
                     href="/catalog"
-                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
+                    class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
                 >
                     Collection
                 </a>
 
                 <a
                     href="/contact"
-                    class="px-4 py-3 text-sm text-ivory transition hover:bg-white/10 hover:text-brass"
+                    class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
                 >
                     Contact
                 </a>

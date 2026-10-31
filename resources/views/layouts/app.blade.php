@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#071A2F">
+    <meta name="theme-color" content="#FFFDF5">
     <title>@yield('title', 'Nivritti | Thoughtful textiles')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
@@ -59,20 +59,20 @@
         .footer-cta:hover .anim-cta-arrow { transform: translate(3px, -3px); }
         .review-slide { grid-area: 1 / 1; }
         .review-slide + .review-slide { visibility: hidden; opacity: 0; }
-        .review-dot { width: 8px; height: 8px; border-radius: 9999px; background: rgba(248,245,237,.35); transition: background-color .3s ease, transform .3s ease; }
-        .review-dot:hover { background: rgba(248,245,237,.72); }
+        .review-dot { width: 8px; height: 8px; border-radius: 9999px; background: rgba(16,40,64,.25); transition: background-color .3s ease, transform .3s ease; }
+        .review-dot:hover { background: rgba(16,40,64,.5); }
         .review-dot.is-active { background: var(--color-brass); transform: scale(1.15); }
         .review-dot:focus-visible { outline: 2px solid var(--color-brass); outline-offset: 4px; }
         .service-card { transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s cubic-bezier(.2,.7,.2,1), border-color .4s ease; }
         .service-icon { transition: transform .45s cubic-bezier(.2,.7,.2,1); }
         @media (hover: hover) {
-            .service-card:hover { transform: translateY(-6px); border-color: var(--color-brass); box-shadow: 0 22px 44px -30px rgba(27,25,21,.20); }
+            .service-card:hover { transform: translateY(-6px); border-color: var(--color-brass); box-shadow: 0 22px 44px -30px rgba(7,26,46,.20); }
             .service-card:hover .service-icon { transform: scale(1.04) rotate(2deg); }
-            .services-cta:hover { transform: translateY(-2px); background-color: var(--color-brass-soft); box-shadow: 0 14px 28px -20px rgba(27,25,21,.26); }
+            .services-cta:hover { transform: translateY(-2px); background-color: var(--color-brass-deep); box-shadow: 0 14px 28px -20px rgba(7,26,46,.26); }
             .services-cta:hover .services-cta-arrow { transform: translateX(3px); }
         }
         @media (hover: none) {
-            .service-card:active { transform: translateY(-2px); border-color: var(--color-brass); box-shadow: 0 18px 36px -26px rgba(27,25,21,.20); }
+            .service-card:active { transform: translateY(-2px); border-color: var(--color-brass); box-shadow: 0 18px 36px -26px rgba(7,26,46,.20); }
             .service-card:active .service-icon { transform: scale(1.03); }
         }
         .services-cta { transition: transform .4s cubic-bezier(.2,.7,.2,1), background-color .3s ease, box-shadow .4s ease; }
@@ -99,7 +99,7 @@
         .product-card:focus-visible .product-img--alt { opacity: 1; transform: scale(1); }
         @media (hover: hover) {
             .product-card:hover { transform: translateY(-6px); border-color: var(--color-brass); }
-            .product-card:hover .product-media { box-shadow: 0 30px 55px -34px rgba(27,25,21,.32); }
+            .product-card:hover .product-media { box-shadow: 0 30px 55px -34px rgba(7,26,46,.32); }
             .product-card:hover .product-img--main { opacity: 0; transform: scale(1.04); }
             .product-card:hover .product-img--alt { opacity: 1; transform: scale(1); }
             .product-card:hover .product-overlay { opacity: .08; }
