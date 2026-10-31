@@ -184,7 +184,7 @@
 
                         <span
                             class="flex h-11 w-11 shrink-0 items-center justify-center
-            rounded-lg bg-brass text-white
+            rounded-lg bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] text-white
             transition-transform duration-300
             group-hover:scale-105"
                             aria-hidden="true">
@@ -224,7 +224,7 @@
 
                         <span
                             class="flex h-11 w-11 shrink-0 items-center justify-center
-            rounded-lg bg-brass text-white
+            rounded-lg bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] text-white
             transition-transform duration-300
             group-hover:scale-105"
                             aria-hidden="true">
@@ -259,7 +259,7 @@
                     <a
                         href="/about"
                         data-intro-cta
-                        class="group inline-flex items-center gap-4 rounded-full bg-brass px-7 py-4 text-sm font-bold uppercase text-white transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-brass hover:text-ink">
+                        class="group inline-flex items-center gap-4 rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] px-7 py-4 text-sm font-bold uppercase text-white transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] hover:text-ink">
                         Explore more
 
                         <span
@@ -276,7 +276,7 @@
 
                         {{-- Smaller Icon --}}
                         <span
-                            class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brass text-white"
+                            class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] text-white"
                             aria-hidden="true">
                             <svg
                                 class="h-4 w-4"

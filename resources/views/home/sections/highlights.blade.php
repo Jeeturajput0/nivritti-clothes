@@ -11,7 +11,7 @@
         ] as $stat)
 
         <div class="flex items-center gap-3 border-ink/10 px-4 first:pl-0 md:justify-center md:border-r md:px-6 md:last:border-r-0 lg:gap-4">
-            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brass/15 text-brass-deep" aria-hidden="true">
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brass text-white " aria-hidden="true">
                 <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     @switch($loop->index)
                     @case(0)

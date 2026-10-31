@@ -451,7 +451,7 @@
 
                 {{-- Floating yellow dot --}}
                 <span
-                    class="trust-dot absolute right-8 top-24 h-10 w-10 rounded-full bg-brass/80 shadow-[0_0_0_6px_rgba(212,166,42,.25)]"
+                    class="trust-dot absolute right-8 top-24 h-10 w-10 rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]/80 shadow-[0_0_0_6px_rgba(212,166,42,.25)]"
                 ></span>
 
 

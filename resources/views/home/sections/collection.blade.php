@@ -28,7 +28,7 @@
                         <div class="mt-auto pt-3">
                             <div class="flex items-center justify-between gap-3 border-t border-ink/10 pt-3">
                                 <span class="text-[10px] font-semibold uppercase tracking-[.12em] text-brass-deep">Explore piece</span>
-                                <span class="product-cta-badge flex h-8 w-8 items-center justify-center rounded-full bg-brass text-ink" aria-hidden="true">
+                                <span class="product-cta-badge flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] text-white" aria-hidden="true">
                                     <svg class="product-cta-arrow h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M5 12h14" />
                                         <path d="m13 6 6 6-6 6" />

@@ -150,7 +150,7 @@
             <span class="text-[11px] font-medium tracking-[.34em]">NIVRITTI</span>
         </div>
     </div>
-    <div class="scroll-progress fixed inset-x-0 top-0 z-[70] h-[2px] bg-brass" data-scroll-progress aria-hidden="true"></div>
+    <div class="scroll-progress fixed inset-x-0 top-0 z-[70] h-[2px] bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]" data-scroll-progress aria-hidden="true"></div>
     @include('components.navbar')
     <main>@yield('content')</main>
     @include('components.footer')

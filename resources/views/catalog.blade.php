@@ -16,7 +16,7 @@
 <section class="bg-ivory mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8 lg:py-10">
     <p class="mb-5 max-w-2xl text-sm leading-7 text-muted">Use the category filters to explore the range, search for a particular piece, or sort the collection by name.</p>
     <div class="flex flex-col gap-5 border-b border-ink/15 pb-5 md:flex-row md:items-center md:justify-between">
-        <div class="flex flex-wrap gap-2">@foreach(['All pieces','Clothing','Textiles','Accessories'] as $category)<button type="button" class="catalog-category rounded-full border border-ink/20 px-4 py-2 text-xs text-ink transition hover:border-brass hover:bg-brass hover:text-ink" data-category="{{ strtolower($category === 'All pieces' ? 'all' : $category) }}">{{ $category }}</button>@endforeach</div>
+        <div class="flex flex-wrap gap-2">@foreach(['All pieces','Clothing','Textiles','Accessories'] as $category)<button type="button" class="catalog-category rounded-full border border-ink/20 px-4 py-2 text-xs text-ink transition hover:border-brass hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] hover:text-ink" data-category="{{ strtolower($category === 'All pieces' ? 'all' : $category) }}">{{ $category }}</button>@endforeach</div>
         <div class="flex flex-wrap gap-3"><label class="flex items-center gap-2 rounded-full border border-ink/15 bg-ivory px-3"><span class="sr-only">Search collection</span><svg class="h-4 w-4 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                     <circle cx="11" cy="11" r="7"></circle>
                     <path d="m20 20-4-4"></path>
@@ -28,7 +28,7 @@
     </div>
     <div id="catalog-grid" class="mt-8 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
         @foreach([['Clothing','The Everyday Tunic','A relaxed silhouette in breathable cotton.','Request a quote','images/products/product-01-a.jpg'],['Textiles','Handwoven Stripe','A tactile weave with a quiet, natural palette.','Request a quote','images/products/product-02-a.jpg'],['Clothing','Indigo Field Shirt','Easy layering, finished with considered details.','Request a quote','images/products/product-03-a.jpg'],['Accessories','Soft Form Scarf','Lightweight texture for all-season layering.','Request a quote','images/products/product-04-a.jpg'],['Textiles','Earth Tone Check','A versatile pattern developed in earthy colour.','Request a quote','images/products/product-05-a.jpg'],['Clothing','The Studio Set','An effortless pairing designed for movement.','Request a quote','images/products/product-06-a.jpg']] as $product)
-        <article class="catalog-card reveal rounded-2xl border border-ink/10 bg-ivory p-2.5" data-category="{{ strtolower($product[0]) }}" data-name="{{ strtolower($product[1]) }}"><a href="#" class="image-zoom group relative block aspect-[4/5] overflow-hidden rounded-xl bg-sand"><img src="{{ asset($product[4]) }}" alt="{{ $product[1] }}" class="h-full w-full object-cover" loading="lazy"><span class="absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-ivory text-ink transition group-hover:bg-brass group-hover:text-ink" aria-hidden="true"><x-icon name="arrow-up-right" class="h-4 w-4" /></span></a>
+        <article class="catalog-card reveal rounded-2xl border border-ink/10 bg-ivory p-2.5" data-category="{{ strtolower($product[0]) }}" data-name="{{ strtolower($product[1]) }}"><a href="#" class="image-zoom group relative block aspect-[4/5] overflow-hidden rounded-xl bg-sand"><img src="{{ asset($product[4]) }}" alt="{{ $product[1] }}" class="h-full w-full object-cover" loading="lazy"><span class="absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-ivory text-ink transition group-hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] group-hover:text-ink" aria-hidden="true"><x-icon name="arrow-up-right" class="h-4 w-4" /></span></a>
             <div class="flex items-start justify-between gap-4 px-2 pt-3.5">
                 <div>
                     <p class="text-[10px] uppercase tracking-[.2em] text-brass-deep">{{ $product[0] }}</p>
@@ -58,8 +58,8 @@
         };
         document.querySelectorAll('.catalog-category').forEach(button => button.addEventListener('click', () => {
             active = button.dataset.category;
-            document.querySelectorAll('.catalog-category').forEach(b => b.classList.remove('border-brass', 'bg-brass', 'text-ink'));
-            button.classList.add('border-brass', 'bg-brass', 'text-ink');
+            document.querySelectorAll('.catalog-category').forEach(b => b.classList.remove('border-brass', 'bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]', 'text-ink'));
+            button.classList.add('border-brass', 'bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]', 'text-ink');
             update();
         }));
         search.addEventListener('input', update);

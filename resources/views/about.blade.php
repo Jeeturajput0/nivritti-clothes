@@ -9,7 +9,7 @@
             <p class="mt-6 max-w-xl text-base leading-8 text-muted">Nivritti brings skilled garment makers, quality fabrics and thoughtful design together to create clothing made with care.</p>
             <p class="mt-4 max-w-xl text-base leading-8 text-muted">From material selection to the final stitch, our team focuses on comfort, dependable quality and the people behind every piece.</p>
             <div class="mt-8 flex flex-wrap gap-3">
-                <a href="/catalog" class="inline-flex items-center gap-3 rounded-sm bg-ink px-7 py-4 text-sm font-semibold text-brass-light transition hover:bg-brass hover:text-ink">Explore the collection <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
+                <a href="/catalog" class="inline-flex items-center gap-3 rounded-sm bg-ink px-7 py-4 text-sm font-semibold text-brass-light transition hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] hover:text-ink">Explore the collection <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
                 <a href="/contact" class="inline-flex items-center gap-3 rounded-full border border-ink/20 px-7 py-4 text-sm font-semibold text-ink transition hover:border-brass hover:bg-sand">Talk with our team</a>
             </div>
         </div>
@@ -34,7 +34,7 @@
             ['03', 'Quality that lasts', 'Careful checks and considered finishing help every piece meet the standard we set.'],
             ] as $principle)
             <article class="reveal rounded-lg border border-ink/10 bg-ivory p-6 sm:p-7">
-                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brass text-xs font-semibold tracking-[.16em] text-ink">{{ $principle[0] }}</span>
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] text-xs font-semibold tracking-[.16em] text-white">{{ $principle[0] }}</span>
                 <h3 class="serif mt-7 text-2xl text-ink">{{ $principle[1] }}</h3>
                 <p class="mt-3 text-sm leading-6 text-muted">{{ $principle[2] }}</p>
             </article>
@@ -62,7 +62,7 @@
             <x-section-label label="Our approach" />
             <h2 class="serif mt-4 text-4xl text-ink sm:text-2xl">Excellence lives in the process.</h2>
         </div>
-        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">@foreach([['01','Material knowledge','We learn the nature of a fibre before asking it to become something new.'],['02','Thoughtful design','Utility, comfort and lasting character guide each design decision.'],['03','Skilled making','Our partnerships recognise skill and encourage shared learning.'],['04','Quality, always','Attention at every stage lets the final details feel effortless.']] as $step)<article class="reveal rounded-lg border border-ink/10 bg-sand p-6"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brass text-xs font-semibold text-ink">{{ $step[0] }}</span>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">@foreach([['01','Material knowledge','We learn the nature of a fibre before asking it to become something new.'],['02','Thoughtful design','Utility, comfort and lasting character guide each design decision.'],['03','Skilled making','Our partnerships recognise skill and encourage shared learning.'],['04','Quality, always','Attention at every stage lets the final details feel effortless.']] as $step)<article class="reveal rounded-lg border border-ink/10 bg-sand p-6"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] text-xs font-semibold text-white">{{ $step[0] }}</span>
                 <h3 class="serif mt-5 text-2xl text-ink">{{ $step[1] }}</h3>
                 <p class="mt-3 text-base leading-7 text-muted">{{ $step[2] }}</p>
             </article>@endforeach</div>
@@ -81,7 +81,7 @@
 <section class="bg-ivory px-5 py-8 text-center sm:px-6 lg:px-8 lg:py-12">
     <div class="reveal mx-auto max-w-3xl">
         <x-section-label label="Work with us" />
-        <h2 class="serif mt-4 text-4xl text-ink sm:text-2xl">Good work starts with a conversation.</h2><a href="/contact" class="mt-7 inline-flex items-center gap-3 rounded-sm bg-ink px-7 py-4 text-sm font-semibold text-brass-light transition hover:bg-brass hover:text-ink">Get in touch <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
+        <h2 class="serif mt-4 text-4xl text-ink sm:text-2xl">Good work starts with a conversation.</h2><a href="/contact" class="mt-7 inline-flex items-center gap-3 rounded-sm bg-ink px-7 py-4 text-sm font-semibold text-brass-light transition hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] hover:text-ink">Get in touch <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
     </div>
 </section>
 
@@ -118,7 +118,7 @@
             <div class="flex items-center gap-5">
 
                 <div
-                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#D4A62A]/50 bg-[#FFFDF5] text-[#B88716]"
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border bg-brass text-white"
                 >
                     <x-icon name="mail" class="h-5 w-5" />
                 </div>

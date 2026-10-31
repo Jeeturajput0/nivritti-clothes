@@ -10,7 +10,7 @@
 
         {{-- Right buttons --}}
         <div class="flex w-full shrink-0 flex-wrap justify-center gap-3 sm:w-auto lg:justify-end">
-            <a href="/contact" class="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-brass px-7 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-brass-deep sm:w-auto">Start a conversation <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
+            <a href="/contact" class="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-sm bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] px-7 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]-deep sm:w-auto">Start a conversation <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
             <a href="/catalog" class="inline-flex w-full items-center justify-center whitespace-nowrap rounded-sm border border-ink/25 px-7 py-4 text-sm text-ink transition duration-300 bg-white hover:-translate-y-1 hover:border-ink hover:bg-ink hover:text-ivory sm:w-auto">View collection</a>
         </div>
     </div>

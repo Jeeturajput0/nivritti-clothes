@@ -16,7 +16,7 @@
                         <img src="{{ asset($product['image']) }}" alt="{{ $product['name'] }}" class="product-img product-img--main absolute inset-0 h-full w-full object-cover" loading="lazy">
                         <img src="{{ asset($product['hover']) }}" alt="" class="product-img product-img--alt absolute inset-0 h-full w-full object-cover" loading="lazy" aria-hidden="true">
                         <span class="product-overlay pointer-events-none absolute inset-0" aria-hidden="true"></span>
-                        <span class="absolute left-2 top-2 bg-brass px-2 py-1 text-[8px] font-semibold uppercase tracking-[.14em] text-ink">Bestseller</span>
+                        <span class="absolute left-2 top-2 bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] px-2 py-1 text-[8px] font-semibold uppercase tracking-[.14em] text-ink">Bestseller</span>
                     </div>
                     <div class="mt-3.5 flex flex-1 flex-col">
                         <p class="text-[9px] font-semibold uppercase tracking-[.18em] text-muted">{{ $product['category'] }}</p>
@@ -24,7 +24,7 @@
                         <p class="mt-1.5 text-[13px] leading-6 text-muted">{{ $product['description'] }}</p>
                         <div class="mt-auto flex items-center justify-between border-t border-ink/10 pt-3">
                             <span class="text-[10px] font-semibold uppercase tracking-[.12em] text-brass-deep">Explore piece</span>
-                            <span class="product-cta-badge flex h-8 w-8 items-center justify-center rounded-full bg-brass text-ink" aria-hidden="true"><x-icon name="arrow-up-right" class="h-3.5 w-3.5" /></span>
+                            <span class="product-cta-badge flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] text-white" aria-hidden="true"><x-icon name="arrow-up-right" class="h-3.5 w-3.5" /></span>
                         </div>
                     </div>
                 </a>

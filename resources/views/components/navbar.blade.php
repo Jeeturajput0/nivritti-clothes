@@ -23,7 +23,7 @@
                     class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('home') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     Home
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('home') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('home') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] transition-all duration-300"></span>
                 </a>
 
                 <a
@@ -31,7 +31,7 @@
                     class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('about') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     About
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('about') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('about') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] transition-all duration-300"></span>
                 </a>
 
                 <a
@@ -39,7 +39,7 @@
                     class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('catalog') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     Collections
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('catalog') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('catalog') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] transition-all duration-300"></span>
                 </a>
 
                 <a
@@ -47,7 +47,7 @@
                     class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('gallery') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     Gallery
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('gallery') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('gallery') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] transition-all duration-300"></span>
                 </a>
 
                 <a
@@ -55,7 +55,7 @@
                     class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('contact') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     Contact
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('contact') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('contact') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] transition-all duration-300"></span>
                 </a>
             </div>
 

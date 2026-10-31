@@ -44,7 +44,7 @@
                 </p>
 
                 <span
-                    class="mt-5 inline-flex items-center gap-3 rounded-full bg-brass px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-brass-light">
+                    class="mt-5 inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]-light">
                     Shop the Collection
 
                     <x-icon

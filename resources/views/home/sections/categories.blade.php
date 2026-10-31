@@ -47,13 +47,13 @@ $categories = [
                 <h2 id="shop-category-title" class="serif mt-4 text-2xl">Find your kind of everyday.</h2>
             </div>
             <div class="flex shrink-0 items-center gap-2" role="group" aria-label="Category slider controls">
-                <button type="button" class="category-arrow flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 text-ink hover:border-brass hover:bg-brass" data-category-prev aria-label="Previous categories">
+                <button type="button" class="category-arrow flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 text-ink hover:border-brass hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]" data-category-prev aria-label="Previous categories">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M19 12H5" />
                         <path d="m12 19-7-7 7-7" />
                     </svg>
                 </button>
-                <button type="button" class="category-arrow flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 text-ink hover:border-brass hover:bg-brass" data-category-next aria-label="Next categories">
+                <button type="button" class="category-arrow flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 text-ink hover:border-brass hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]" data-category-next aria-label="Next categories">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M5 12h14" />
                         <path d="m12 5 7 7-7 7" />

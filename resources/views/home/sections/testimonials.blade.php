@@ -73,10 +73,10 @@ $reviews = [
                     <p class="text-[9px] font-medium uppercase tracking-[.18em] text-muted">Partnership, in their words</p>
                     <div class="flex items-center gap-3">
                         <div class="flex items-center gap-2" role="group" aria-label="Review navigation">
-                            <button type="button" data-review-prev class="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 text-ink transition hover:border-brass hover:bg-brass" aria-label="Previous review">
+                            <button type="button" data-review-prev class="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 text-ink transition hover:border-brass hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]" aria-label="Previous review">
                                 <x-icon name="chevron-left" class="h-4 w-4" />
                             </button>
-                            <button type="button" data-review-next class="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 text-ink transition hover:border-brass hover:bg-brass" aria-label="Next review">
+                            <button type="button" data-review-next class="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 text-ink transition hover:border-brass hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]" aria-label="Next review">
                                 <x-icon name="chevron-right" class="h-4 w-4" />
                             </button>
                         </div>

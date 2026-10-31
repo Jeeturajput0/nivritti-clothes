@@ -24,14 +24,14 @@
         <div class="mt-4 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <p class="reveal max-w-lg text-xs leading-6 text-ivory/85 sm:text-sm">We bring thoughtful design, responsible making and the quiet beauty of textiles together.</p>
             <div class="reveal flex flex-wrap gap-3">
-                <a href="/catalog" class="inline-flex items-center gap-3 rounded-full bg-brass px-5 py-3 text-xs font-semibold text-ink transition hover:bg-brass-deep sm:text-sm">Explore Our Collections <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
+                <a href="/catalog" class="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] px-5 py-3 text-xs font-semibold text-ink transition hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16]-deep sm:text-sm">Explore Our Collections <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
                 <a href="/about" class="inline-flex items-center rounded-full border border-ivory/50 px-5 py-3 text-xs text-ivory transition hover:border-brass hover:bg-ivory/10 sm:text-sm">Our Story</a>
             </div>
         </div>
         <div class="mt-6 flex flex-wrap items-center justify-between gap-4 sm:mt-8">
             <div data-hero-scroll class="flex items-center gap-3 text-[10px] uppercase tracking-[.24em] text-ivory/70"><span class="h-px w-12 bg-ivory/60"></span> Scroll to discover</div>
             <div class="flex items-center gap-2" role="group" aria-label="Choose hero image">
-                <button type="button" data-hero-prev class="flex h-8 w-8 items-center justify-center rounded-full border border-ivory/25 text-ivory transition hover:border-brass hover:bg-brass hover:text-ink" aria-label="Previous hero image">
+                <button type="button" data-hero-prev class="flex h-8 w-8 items-center justify-center rounded-full border border-ivory/25 text-ivory transition hover:border-brass hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] hover:text-ink" aria-label="Previous hero image">
                     <x-icon name="chevron-left" class="h-4 w-4" />
                 </button>
                 <span data-hero-current class="text-[10px] font-semibold tabular-nums text-brass-light" aria-hidden="true">01</span>
@@ -41,7 +41,7 @@
                     <button type="button" data-hero-dot="2" class="h-1 w-4 bg-ivory/25 transition-all" aria-label="Show slide 3" aria-current="false"></button>
                 </div>
                 <span class="text-[10px] tabular-nums text-ivory/50" aria-hidden="true">03</span>
-                <button type="button" data-hero-next class="flex h-8 w-8 items-center justify-center rounded-full border border-ivory/25 text-ivory transition hover:border-brass hover:bg-brass hover:text-ink" aria-label="Next hero image">
+                <button type="button" data-hero-next class="flex h-8 w-8 items-center justify-center rounded-full border border-ivory/25 text-ivory transition hover:border-brass hover:bg-gradient-to-r from-[#D99A16] via-[#E8B52F] to-[#D49A16] hover:text-ink" aria-label="Next hero image">
                     <x-icon name="chevron-right" class="h-4 w-4" />
                 </button>
             </div>
