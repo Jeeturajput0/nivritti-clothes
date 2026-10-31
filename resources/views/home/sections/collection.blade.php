@@ -3,12 +3,12 @@
     <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
             <x-section-label label="New arrivals" data-collection-label />
-            <h2 id="collection-title" data-collection-heading class="serif mt-4 text-2xl text-ink">New arrivals</h2>
-            <p data-collection-text class="mt-5 max-w-2xl text-base leading-8 text-muted lg:text-lg">Discover thoughtfully crafted textiles designed with quality, comfort and modern fashion in mind.</p>
+            <h2 id="collection-title" data-collection-heading class="serif mt-4 text-2xl text-ink">Latest Collections</h2>
+            <p data-collection-text class="mt-5 max-w-2xl text-base leading-8 text-muted lg:text-lg">Discover thoughtfully crafted pieces designed with prints, comfort and modern trends in mind.</p>
         </div>
 
         <div data-collection-grid class="mt-10 grid gap-x-4 gap-y-7 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4 lg:gap-x-5 lg:gap-y-8">
-            @foreach(array_slice($products, 0, 4) as $index => $product)
+            @foreach(array_slice($products, 0, 4) as $product)
             <article data-product-card class="h-full">
                 <a href="/catalog" class="product-card group flex h-full flex-col">
                     <div class="product-media relative aspect-[3/4] shrink-0 overflow-hidden bg-sand">
@@ -21,7 +21,6 @@
                     <div class="mt-3.5 flex flex-1 flex-col">
                         <div class="flex items-center justify-between gap-3">
                             <p class="product-category text-[9px] font-semibold uppercase tracking-[.18em] text-muted opacity-75">{{ $product['category'] }}</p>
-                            <span class="text-[9px] font-medium tracking-[.16em] text-muted" aria-hidden="true">0{{ $index + 1 }}</span>
                         </div>
                         <h3 class="product-title serif mt-1.5 text-lg leading-snug text-ink">{{ $product['name'] }}</h3>
                         <p class="mt-1.5 text-[13px] leading-6 text-muted">{{ $product['description'] }}</p>

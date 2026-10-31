@@ -5,7 +5,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
             id="nav-container"
-            class="mt-0 flex h-[76px] items-center justify-between border-b border-brass/40 px-5 shadow-none transition-all duration-500 lg:px-7"
+            class="mt-3 flex h-[72px] items-center justify-between rounded-full border border-brass/30 bg-ivory/95 px-5 shadow-[0_12px_36px_-24px_rgba(7,26,46,.35)] backdrop-blur transition-all duration-500 lg:px-7"
         >
             {{-- Logo --}}
             <a href="/" class="flex items-center">
@@ -20,42 +20,42 @@
             <div class="hidden items-center gap-7 md:flex lg:gap-9">
                 <a
                     href="/"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('home') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     Home
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('home') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
                 </a>
 
                 <a
                     href="/about"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('about') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     About
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
-                </a>
-
-                <a
-                    href="/gallery"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
-                >
-                    Gallery
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('about') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
                 </a>
 
                 <a
                     href="/catalog"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('catalog') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
-                    Collection
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
+                    Collections
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('catalog') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
+                </a>
+
+                <a
+                    href="/gallery"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('gallery') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
+                >
+                    Gallery
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('gallery') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
                 </a>
 
                 <a
                     href="/contact"
-                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] text-ink transition duration-300 hover:text-brass-deep"
+                    class="nav-link group relative text-[11px] font-semibold uppercase tracking-[.16em] {{ request()->routeIs('contact') ? 'text-brass-deep' : 'text-ink' }} transition duration-300 hover:text-brass-deep"
                 >
                     Contact
-                    <span class="absolute -bottom-2 left-0 h-[1.5px] w-0 bg-brass transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute -bottom-2 left-0 h-[1.5px] {{ request()->routeIs('contact') ? 'w-full' : 'w-0 group-hover:w-full' }} bg-brass transition-all duration-300"></span>
                 </a>
             </div>
 
@@ -127,17 +127,17 @@
                 </a>
 
                 <a
+                    href="/catalog"
+                    class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
+                >
+                    Collections
+                </a>
+
+                <a
                     href="/gallery"
                     class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
                 >
                     Gallery
-                </a>
-
-                <a
-                    href="/catalog"
-                    class="px-4 py-3 text-sm text-ink transition hover:bg-ink/5 hover:text-brass-deep"
-                >
-                    Collection
                 </a>
 
                 <a

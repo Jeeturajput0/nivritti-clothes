@@ -2,45 +2,43 @@
 @php
 $services = [
 [
-'number' => '01',
 'title' => 'Woven Textiles',
 'icon' => 'layers',
 'description' => 'Premium woven textiles manufactured with precision, quality materials, and consistent finishing for modern fashion and garment requirements.',
 ],
 [
-'number' => '02',
-'title' => 'Knit Warp & Circular',
+'title' => 'Knit Wear & Circular',
 'icon' => 'workflow',
 'description' => 'High-quality knitted fabrics designed for comfort, durability, flexibility, and modern apparel production.',
 ],
 [
-'number' => '03',
 'title' => 'Garment Manufacturing',
 'icon' => 'shirt',
 'description' => 'Complete garment manufacturing solutions combining skilled craftsmanship, modern production techniques, and strict quality control.',
 ],
 [
-'number' => '04',
 'title' => 'Natural Fiber Textiles',
 'icon' => 'leaf',
 'description' => 'Comfortable and sustainable natural fiber textiles crafted from quality materials for everyday and premium fashion applications.',
 ],
 ];
 @endphp
-<section id="services" class="services-section relative overflow-hidden bg-sand py-8 md:py-10 lg:py-12" aria-labelledby="services-title">
+<section id="services" class="services-section relative overflow-hidden bg-[#ffe28c70] py-8 md:py-10 lg:py-12" aria-labelledby="services-title">
     <span data-stitch-divider class="stitch-divider" aria-hidden="true"></span>
-    <div class="pointer-events-none absolute -right-32 top-24 h-[420px] w-[420px] rounded-full border border-brass/25" aria-hidden="true"></div>
-    <div class="pointer-events-none absolute -left-40 bottom-10 h-[380px] w-[380px] rounded-full border border-ink/15" aria-hidden="true"></div>
+    <x-decorative-botanical variant="branch" class="decor-branch absolute -right-14 top-4 hidden h-[26rem] w-72 text-brass-deep/70 opacity-45 sm:block" />
+    <x-decorative-circles class="decor-circles absolute -left-24 bottom-0 hidden h-80 w-80 text-brass-deep/80 opacity-50 md:block" />
+    <div class="pointer-events-none absolute -right-32 top-24 h-[420px] w-[420px] rounded-full border border-brass/40" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -left-40 bottom-10 h-[380px] w-[380px] rounded-full border border-ink/25" aria-hidden="true"></div>
 
     <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
             <x-section-label label="What we do" data-services-label />
-            <h2 id="services-title" data-services-heading class="serif mt-4 text-2xl text-ink">Complete Nivritti &amp; Garment Manufacturing Solutions</h2>
+            <h2 id="services-title" data-services-heading class="serif mt-4 text-2xl text-ink">Complete Nivritti &amp; Garment Solutions</h2>
         </div>
 
         <div class="mt-5 grid gap-5 sm:grid-cols-2 xl:grid-cols-4 lg:mt-8 lg:gap-6">
             @foreach($services as $service)
-            <article data-service-card class="service-card flex h-full flex-col border border-brass/30 bg-[#FFFEF9] p-6 sm:p-7">
+            <article data-service-card class="service-card flex h-full flex-col rounded-2xl border border-brass/30 bg-[#FFFEF9] p-6 sm:p-7">
                 <span class="service-icon flex h-14 w-14 items-center justify-center rounded-full bg-brass text-ink" aria-hidden="true">
                     @switch($service['icon'])
                     @case('layers')
@@ -71,9 +69,9 @@ $services = [
                     @endswitch
                 </span>
 
-                <p class="mt-7 text-[11px] font-semibold tracking-[.16em] text-muted" aria-hidden="true">{{ $service['number'] }}</p>
                 <h3 class="mt-2.5 text-2xl font-semibold leading-snug tracking-[-.01em] text-ink xl:min-h-[3.5rem]">{{ $service['title'] }}</h3>
                 <p class="mt-3 text-sm leading-7 text-muted">{{ $service['description'] }}</p>
+                <a href="/about" class="mt-auto inline-flex items-center gap-2 pt-5 text-xs font-semibold uppercase tracking-[.12em] text-brass-deep">Learn More <span aria-hidden="true">→</span></a>
             </article>
             @endforeach
         </div>

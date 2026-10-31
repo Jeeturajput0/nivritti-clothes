@@ -23,7 +23,9 @@ $reviews = [
 @endphp
 <section id="reviews" class="relative mx-0 scroll-mt-24 rounded-3xl bg-[#FFE28C70] px-5 py-8 sm:px-6 sm:py-10 md:mx-12 lg:mx-[120px] lg:px-8 lg:py-12" aria-labelledby="reviews-title">
     <span data-stitch-divider class="stitch-divider" aria-hidden="true"></span>
-    <div class="mx-auto max-w-7xl">
+    <x-decorative-botanical variant="lotus" class="decor-lotus absolute -bottom-6 right-0 hidden h-64 w-48 text-brass-deep/70 opacity-45 sm:block" />
+    <x-decorative-circles class="decor-circles absolute -left-20 top-12 hidden h-64 w-64 text-brass-deep/80 opacity-45 lg:block" />
+    <div class="relative z-10 mx-auto max-w-7xl">
         <div class="reveal mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between lg:mb-10">
             <div>
                 <x-section-label label="Customer testimonials" />
@@ -40,12 +42,12 @@ $reviews = [
                     <p class="serif mt-2 max-w-sm text-2xl leading-snug text-ivory sm:text-3xl">Made with care, built on trust.</p>
                 </div>
                 <div class="absolute bottom-5 right-5 h-24 w-20 overflow-hidden rounded-xl border-2 border-ivory bg-sand shadow-[0_12px_30px_-12px_rgba(7,26,46,.55)] sm:bottom-7 sm:right-7 sm:h-36 sm:w-28" aria-hidden="true">
-                    <img src="{{ asset('images/process/testmonialinner.png') }}" alt="" class="h-full w-full object-cover" loading="lazy">
+                    <img src="{{ asset('images/process/4369d2b6-6424-4067-863d-07c8ac6ef036.png') }}" alt="" class="h-full w-full object-cover" loading="lazy">
                     <span class="absolute inset-x-0 bottom-0 bg-ink/65 px-1.5 py-1 text-center text-[7px] font-medium uppercase tracking-[.12em] text-ivory sm:text-[8px]">In the making</span>
                 </div>
             </div>
 
-            <div class="review-slider relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-[1.75rem] border border-ink/10 bg-[#FFFEF9] p-6 sm:min-h-[380px] sm:p-9 lg:min-h-[440px] lg:p-12" data-review-slider>
+            <div class="review-slider relative flex min-h-[260px] flex-col justify-between overflow-hidden rounded-[1.75rem] border border-ink/10 bg-[#FFFEF9] p-6 sm:min-h-[380px] sm:p-9 lg:min-h-[440px] lg:p-12" data-review-slider>
                 <div class="pointer-events-none absolute -bottom-20 -right-16 h-56 w-56 rounded-full border border-brass/20" aria-hidden="true"></div>
                 <div class="pointer-events-none absolute -bottom-10 -right-6 h-36 w-36 rounded-full border border-brass/20" aria-hidden="true"></div>
                 <div class="relative">
@@ -69,10 +71,20 @@ $reviews = [
 
                 <div class="relative mt-5 flex items-center justify-between border-t border-ink/10 pt-5">
                     <p class="text-[9px] font-medium uppercase tracking-[.18em] text-muted">Partnership, in their words</p>
-                    <div class="flex items-center gap-3" role="group" aria-label="Choose a review">
-                        @foreach($reviews as $index => $review)
-                        <button type="button" class="review-dot {{ $index === 0 ? 'is-active' : '' }}" data-review-dot data-review-index="{{ $index }}" aria-label="View review {{ $index + 1 }}" @if($index===0) aria-current="true" @endif></button>
-                        @endforeach
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2" role="group" aria-label="Review navigation">
+                            <button type="button" data-review-prev class="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 text-ink transition hover:border-brass hover:bg-brass" aria-label="Previous review">
+                                <x-icon name="chevron-left" class="h-4 w-4" />
+                            </button>
+                            <button type="button" data-review-next class="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 text-ink transition hover:border-brass hover:bg-brass" aria-label="Next review">
+                                <x-icon name="chevron-right" class="h-4 w-4" />
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-3" role="group" aria-label="Choose a review">
+                            @foreach($reviews as $index => $review)
+                            <button type="button" class="review-dot {{ $index === 0 ? 'is-active' : '' }}" data-review-dot data-review-index="{{ $index }}" aria-label="View review {{ $index + 1 }}" @if($index===0) aria-current="true" @endif></button>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>

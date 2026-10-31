@@ -75,4 +75,5 @@ $products = [
 @include('home.sections.testimonials')
 @include('home.sections.instagram')
 @include('home.sections.final-cta')
+@include('home.sections.newsletter')
 @endsection

@@ -189,22 +189,6 @@ main [class*="border-ink/"] {
     border-color: var(--color-border);
 }
 
-#about-intro {
-    --color-ivory: #F5F0E6;
-    --color-sand: #E8E1D2;
-    --color-ink: #121A24;
-    --color-brass: #C4962A;
-    --color-brass-light: #E8C56D;
-    --color-brass-deep: #9A7520;
-    --color-thread: #C4962A;
-    --color-muted: #7A756D;
-    --color-border: #D4C9B8;
-}
-
-#about-intro [class*="border-ink/"] {
-    border-color: var(--color-border);
-}
-
 #nav-container,
 #mobile-menu {
     border-color: var(--color-brass);
@@ -217,6 +201,8 @@ main [class*="border-ink/"] {
 #nav-container {
     border: 1px solid var(--color-border);
     border-radius: 9999px;
+    background-color: rgba(255, 253, 245, .96);
+    box-shadow: 0 12px 36px -24px rgba(7, 26, 46, .35);
 }
 
 #mobile-menu {
@@ -308,8 +294,32 @@ main form[class*="rounded"] {
 }
 
 #reviews {
-    background-color: var(--color-surface-sunken);
     color: var(--color-text);
+}
+
+.decor-botanical {
+    z-index: 0;
+    animation: botanical-drift 12s ease-in-out infinite alternate;
+}
+
+.decor-botanical path,
+.decor-botanical circle {
+    vector-effect: non-scaling-stroke;
+}
+
+.decor-circles {
+    z-index: 0;
+    animation: botanical-drift 14s ease-in-out infinite alternate-reverse;
+}
+
+.decor-circles circle,
+.decor-circles path {
+    vector-effect: non-scaling-stroke;
+}
+
+@keyframes botanical-drift {
+    from { transform: translateY(0); }
+    to { transform: translateY(-8px); }
 }
 
 #reviews .review-slider {

@@ -1,5 +1,5 @@
 {{-- Hero --}}
-<section id="home-hero" data-premium-hero class="relative flex min-h-[680px] items-end overflow-hidden bg-ink/80 pt-28 sm:min-h-[680px]" role="region" aria-roledescription="carousel" aria-label="Nivritti textile stories">
+<section id="home-hero" data-premium-hero class="relative flex min-h-[500px] items-end overflow-hidden bg-[#ffe28c70] pt-28 sm:min-h-[650px]" role="region" aria-roledescription="carousel" aria-label="Nivritti textile stories">
     <div data-hero-media class="absolute inset-0">
         <img data-hero-slide src="{{ asset('images/hero/images (1).jpeg') }}" alt="Two Nivritti workers in orange headscarves at their machines" class="absolute inset-0 h-full w-full object-cover object-center opacity-100 transition-opacity duration-1000">
         <img data-hero-slide src="{{ asset('images/hero/images.jpeg') }}" alt="A long row of sewing stations inside the Nivritti workshop" class="absolute inset-0 h-full w-full object-cover object-center opacity-0 transition-opacity duration-1000" aria-hidden="true">
@@ -15,23 +15,35 @@
             <circle cx="-11" cy="0" r="1.4" fill="none" stroke="currentColor" stroke-width="1" />
         </g>
     </svg>
-    <div class="relative mx-auto w-full max-w-7xl px-5 pb-12 pt-36 text-ivory sm:px-6 sm:pb-16 lg:px-8 lg:pb-20">
-        <p class="reveal mb-6 flex items-center gap-3 text-[10px] font-medium uppercase tracking-[.3em] text-brass-light sm:text-xs">Nivritti · Textiles with intention</p>
-        <h1 class="reveal serif max-w-4xl text-5xl font-normal leading-[.98] tracking-tight sm:text-6xl lg:text-8xl">Made of craft.<br><em class="font-normal">Made for tomorrow.</em></h1>
-        <div class="mt-8 flex flex-col gap-7 sm:flex-row sm:items-end sm:justify-between">
-            <p class="reveal max-w-lg text-sm leading-7 text-ivory/85 sm:text-base">We bring thoughtful design, responsible making and the quiet beauty of textiles together.</p>
-            <div class="reveal flex flex-wrap gap-3"><a href="/catalog" class="inline-flex items-center gap-4 rounded-full bg-brass px-6 py-4 text-sm font-semibold text-ink transition hover:bg-brass-deep">Explore the collection <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a><a href="/about" class="inline-flex items-center rounded-full border border-ivory/50 px-6 py-4 text-sm text-ivory transition hover:border-brass hover:bg-ivory/10">Our approach</a></div>
+    
+    <div class="relative mx-auto w-full max-w-7xl px-5 pb-12 pt-10 text-ivory sm:px-6 sm:pb-10 lg:px-8 lg:pb-8">
+        <p class="reveal mb-3 flex items-center gap-3 text-[10px] font-medium uppercase tracking-[.3em] text-brass-light sm:text-xs">Nivritti · Indian textile craftsmanship</p>
+        
+        <h1 class="reveal serif max-w-3xl text-3xl font-normal leading-tight tracking-tight sm:text-4xl lg:text-5xl">Made of craft.<br><em class="font-normal">Made for tomorrow.</em></h1>
+        
+        <div class="mt-4 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <p class="reveal max-w-lg text-xs leading-6 text-ivory/85 sm:text-sm">We bring thoughtful design, responsible making and the quiet beauty of textiles together.</p>
+            <div class="reveal flex flex-wrap gap-3">
+                <a href="/catalog" class="inline-flex items-center gap-3 rounded-full bg-brass px-5 py-3 text-xs font-semibold text-ink transition hover:bg-brass-deep sm:text-sm">Explore Our Collections <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
+                <a href="/about" class="inline-flex items-center rounded-full border border-ivory/50 px-5 py-3 text-xs text-ivory transition hover:border-brass hover:bg-ivory/10 sm:text-sm">Our Story</a>
+            </div>
         </div>
-        <div class="mt-10 flex flex-wrap items-center justify-between gap-6 sm:mt-14">
+        <div class="mt-6 flex flex-wrap items-center justify-between gap-4 sm:mt-8">
             <div data-hero-scroll class="flex items-center gap-3 text-[10px] uppercase tracking-[.24em] text-ivory/70"><span class="h-px w-12 bg-ivory/60"></span> Scroll to discover</div>
-            <div class="flex items-center gap-3" aria-label="Choose hero image">
+            <div class="flex items-center gap-2" role="group" aria-label="Choose hero image">
+                <button type="button" data-hero-prev class="flex h-8 w-8 items-center justify-center rounded-full border border-ivory/25 text-ivory transition hover:border-brass hover:bg-brass hover:text-ink" aria-label="Previous hero image">
+                    <x-icon name="chevron-left" class="h-4 w-4" />
+                </button>
                 <span data-hero-current class="text-[10px] font-semibold tabular-nums text-brass-light" aria-hidden="true">01</span>
                 <div class="flex items-center gap-2">
-                <button type="button" data-hero-dot="0" class="h-1 w-8 bg-ivory transition-all" aria-label="Show slide 1" aria-current="true"></button>
-                <button type="button" data-hero-dot="1" class="h-1 w-4 bg-ivory/25 transition-all" aria-label="Show slide 2" aria-current="false"></button>
-                <button type="button" data-hero-dot="2" class="h-1 w-4 bg-ivory/25 transition-all" aria-label="Show slide 3" aria-current="false"></button>
+                    <button type="button" data-hero-dot="0" class="h-1 w-8 bg-ivory transition-all" aria-label="Show slide 1" aria-current="true"></button>
+                    <button type="button" data-hero-dot="1" class="h-1 w-4 bg-ivory/25 transition-all" aria-label="Show slide 2" aria-current="false"></button>
+                    <button type="button" data-hero-dot="2" class="h-1 w-4 bg-ivory/25 transition-all" aria-label="Show slide 3" aria-current="false"></button>
                 </div>
                 <span class="text-[10px] tabular-nums text-ivory/50" aria-hidden="true">03</span>
+                <button type="button" data-hero-next class="flex h-8 w-8 items-center justify-center rounded-full border border-ivory/25 text-ivory transition hover:border-brass hover:bg-brass hover:text-ink" aria-label="Next hero image">
+                    <x-icon name="chevron-right" class="h-4 w-4" />
+                </button>
             </div>
         </div>
     </div>
@@ -44,6 +56,8 @@
 
         const slides = [...hero.querySelectorAll('[data-hero-slide]')];
         const dots = [...hero.querySelectorAll('[data-hero-dot]')];
+        const previousButton = hero.querySelector('[data-hero-prev]');
+        const nextButton = hero.querySelector('[data-hero-next]');
         const currentLabel = hero.querySelector('[data-hero-current]');
         let currentSlide = 0;
 
@@ -67,6 +81,8 @@
         };
 
         dots.forEach((dot, index) => dot.addEventListener('click', () => showSlide(index)));
+        previousButton?.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextButton?.addEventListener('click', () => showSlide(currentSlide + 1));
         showSlide(0);
 
         const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');

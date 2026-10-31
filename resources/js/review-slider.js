@@ -7,6 +7,8 @@ const IN_OFFSET = 0.4;
 const initReviewSlider = (root) => {
     const slides = gsap.utils.toArray('[data-review-slide]', root);
     const dots = gsap.utils.toArray('[data-review-dot]', root);
+    const previousButton = root.querySelector('[data-review-prev]');
+    const nextButton = root.querySelector('[data-review-next]');
     if (slides.length < 2) return;
 
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -160,6 +162,8 @@ const initReviewSlider = (root) => {
             go(dotIndex);
         });
     });
+    previousButton?.addEventListener('click', () => go(index - 1));
+    nextButton?.addEventListener('click', () => go(index + 1));
 
     const pause = () => {
         paused = true;

@@ -1,4 +1,4 @@
-{{-- Final CTA --}}
+<!-- {{-- Final CTA --}}
 <section class="bg-sand py-4 md:py-10 lg:py-8">
     <div class="reveal mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-5 text-center sm:px-6 lg:flex-row lg:items-center lg:gap-10 lg:px-8 lg:text-left">
         {{-- Left content --}}
@@ -14,5 +14,4 @@
             <a href="/catalog" class="inline-flex w-full items-center justify-center whitespace-nowrap rounded-sm border border-ink/25 px-7 py-4 text-sm text-ink transition duration-300 bg-white hover:-translate-y-1 hover:border-ink hover:bg-ink hover:text-ivory sm:w-auto">View collection</a>
         </div>
     </div>
-</section>
-    
+</section> -->

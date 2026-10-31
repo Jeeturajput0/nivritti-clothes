@@ -124,6 +124,7 @@
             *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
             .site-loader { display: none !important; }
             .scroll-progress { display: none; }
+            .decor-botanical, .decor-circles { animation: none !important; }
             ::view-transition-old(root), ::view-transition-new(root) { animation: none !important; }
             .js .reveal, .anim-word, .gallery-card { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
             .image-zoom:hover img, .catalog-card:hover, .anim-cta:hover, .anim-cta:hover .anim-cta-arrow,

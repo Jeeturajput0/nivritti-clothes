@@ -32,11 +32,10 @@
 </style>
 @php
 $categories = [
-['Three Piece Kurti Dupatta Sets', 'images/categories/three-piece-sets.jpg', 'S · M · L · XL · XXL'],
-['Frock Kurtis', 'images/categories/frock-kurtis.jpg', 'S · M · L · XL · XXL'],
-['Kurtis', 'images/categories/kurtis.jpg', 'S · M · L · XL · XXL'],
-['Two Piece Co-ord Sets', 'images/categories/co-ord-sets.jpg', 'S · M · L · XL · XXL'],
-['Quality Fabrics', 'images/categories/cotton-collection.jpg', 'Cotton · Muslin · Rayon'],
+['Dress Materials & Unstitched Suits', 'images/categories/three-piece-sets.jpg', 'Explore'],
+['Ethnic Kurtos', 'images/categories/kurtis.jpg', 'Explore'],
+['Sarees', 'images/categories/muslin-collection.jpg', 'Explore'],
+['Fusion Wear & Co-ord Sets', 'images/categories/co-ord-sets.jpg', 'Explore'],
 ];
 @endphp
 <section aria-labelledby="shop-category-title" class="relative bg-ivory py-8 md:py-10 lg:py-12">
@@ -67,22 +66,20 @@ $categories = [
             <div class="category-track flex w-max" data-category-track>
                 @foreach ($categories as $category)
                 <div class="w-[250px] shrink-0 pr-4 sm:w-[290px] lg:w-[300px] lg:pr-5" data-category-slide>
-                    <a href="/catalog" class="category-card group/card relative block origin-center text-center focus-visible:z-10" aria-label="Shop {{ $category[0] }}">
+                    <a href="/catalog" class="category-card group/card reveal relative block origin-center text-center focus-visible:z-10" aria-label="Shop {{ $category[0] }}">
                         <div class="category-image relative aspect-[4/5] overflow-hidden bg-sand">
                             <img src="{{ asset($category[1]) }}" alt="{{ $category[0] }}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover/card:scale-105" loading="lazy">
                         </div>
                         <div class="pt-3 text-ink">
                             <h3 class="serif text-xl leading-snug">{{ $category[0] }}</h3>
-                            <p class="mt-1 text-[9px] uppercase tracking-[.14em] text-muted">{{ $category[2] }}</p>
+                            <p class="mt-2 inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[.14em] text-brass-deep">{{ $category[2] }} <span aria-hidden="true">→</span></p>
                         </div>
                     </a>
                 </div>
                 @endforeach
             </div>
 
-            <div class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-ivory via-ivory/40 to-transparent sm:w-16" aria-hidden="true"></div>
-            <div class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-ivory via-ivory/40 to-transparent sm:w-16" aria-hidden="true"></div>
-        </div>
+                </div>
 
 
     </div>
