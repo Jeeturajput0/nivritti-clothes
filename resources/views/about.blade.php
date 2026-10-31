@@ -74,7 +74,7 @@
         <div>
             <x-section-label label="Quality & responsibility" />
             <h2 class="serif mt-4 text-4xl text-ink">Better choices, made every day.</h2>
-            <p class="mt-5 text-base leading-8 text-muted">We keep improving how we source, sample and produce. Our commitment is practical: ask better questions, make considered choices and work with partners who share our care for quality.</p><a href="/contact" class="mt-7 inline-flex items-center gap-2 rounded-sm bg-ink px-6 py-3.5 text-sm font-semibold text-brass-light">Talk to our team <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
+            <p class="mt-5 text-base leading-6 text-muted">We keep improving how we source, sample and produce. Our commitment is practical: ask better questions, make considered choices and work with partners who share our care for quality.</p><a href="/contact" class="mt-7 inline-flex items-center gap-2 rounded-sm bg-ink px-6 py-3.5 text-sm font-semibold text-brass-light">Talk to our team <x-icon name="arrow-up-right" class="anim-cta-arrow h-4 w-4" /></a>
         </div>
     </div>
 </section>

@@ -21,7 +21,7 @@ $reviews = [
 ],
 ];
 @endphp
-<section id="reviews" class="relative mx-0 scroll-mt-24 bg-sand px-5 py-8 sm:px-6 sm:py-10 md:mx-12 lg:mx-[120px] lg:px-8 lg:py-12" aria-labelledby="reviews-title">
+<section id="reviews" class="relative mx-0 scroll-mt-24 rounded-3xl bg-[#FFE28C70] px-5 py-8 sm:px-6 sm:py-10 md:mx-12 lg:mx-[120px] lg:px-8 lg:py-12" aria-labelledby="reviews-title">
     <span data-stitch-divider class="stitch-divider" aria-hidden="true"></span>
     <div class="mx-auto max-w-7xl">
         <div class="reveal mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between lg:mb-10">
@@ -33,14 +33,14 @@ $reviews = [
 
         <div class="grid gap-4 lg:grid-cols-[.9fr_1.1fr] lg:gap-6">
             <div class="image-zoom reveal group relative min-h-[300px] overflow-hidden rounded-[1.75rem] bg-sand sm:min-h-[380px] lg:min-h-[440px]">
-                <img src="{{ asset('images/testenomeals.jpeg') }}" alt="A Nivritti maker carefully stitching fabric at her machine" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('images/process/testmonial.outer.png') }}" alt="A Nivritti maker carefully stitching fabric at her machine" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/5 to-transparent"></div>
                 <div class="absolute bottom-6 left-6 right-24 sm:bottom-8 sm:left-8 sm:right-32">
                     <p class="text-[9px] font-semibold uppercase tracking-[.22em] text-brass-light">Thoughtful textiles</p>
                     <p class="serif mt-2 max-w-sm text-2xl leading-snug text-ivory sm:text-3xl">Made with care, built on trust.</p>
                 </div>
                 <div class="absolute bottom-5 right-5 h-24 w-20 overflow-hidden rounded-xl border-2 border-ivory bg-sand shadow-[0_12px_30px_-12px_rgba(7,26,46,.55)] sm:bottom-7 sm:right-7 sm:h-36 sm:w-28" aria-hidden="true">
-                    <img src="{{ asset('images/process/choose-2.jpg') }}" alt="" class="h-full w-full object-cover" loading="lazy">
+                    <img src="{{ asset('images/process/testmonialinner.png') }}" alt="" class="h-full w-full object-cover" loading="lazy">
                     <span class="absolute inset-x-0 bottom-0 bg-ink/65 px-1.5 py-1 text-center text-[7px] font-medium uppercase tracking-[.12em] text-ivory sm:text-[8px]">In the making</span>
                 </div>
             </div>
